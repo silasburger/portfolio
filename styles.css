@@ -1,0 +1,16 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.sidebar {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  border-right: dashed 5px #555;
+  float: left;
+}
+
+.main {
+
+}
+
