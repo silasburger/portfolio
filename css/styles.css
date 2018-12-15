@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: #555;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  border-right: dashed 5px #292929;
+  float: left;
+  text-align: right;
+}
+
+.content{
+ margin: auto;
+ max-width: 800px;
+}
+
+.content-items {
+  
+}
+
