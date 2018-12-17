@@ -1,9 +1,19 @@
+/* 
+font-family: 'Acme', sans-serif;
+font-family: 'Kodchasan', sans-serif;
+font-family: 'Stylish', sans-serif;
+font-family: 'Kite One', sans-serif;
+font-family: 'Meera Inimai', sans-serif; 
+*/
+
 * {
   box-sizing: border-box; 
 }
 
 body {
   background-color: #555;
+  font-family: 'Meera Inimai', sans-serif; 
+  color: burlywood;
 }
 
 header {
@@ -16,14 +26,28 @@ header {
   border-right: dashed 5px #292929;
   float: left;
   text-align: right;
+  padding: 0 20px;
+  top: 0;
+}
+header h1 {
+  font-family: 'Kodchasan', sans-serif;
+  color: tomato;
 }
 
 .content{
- margin: auto;
- max-width: 800px;
+  margin: auto;
+  max-width: 800px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
-.content-items {
-  
+article {
+  margin-left: 240px;
+  border-bottom: dashed 5px #292929;
+  padding: 20px;
+}
+
+article h1 { 
+  margin-top: 0;
 }
 
