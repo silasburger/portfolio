@@ -4,6 +4,7 @@ font-family: 'Kodchasan', sans-serif;
 font-family: 'Stylish', sans-serif;
 font-family: 'Kite One', sans-serif;
 font-family: 'Meera Inimai', sans-serif; 
+font-family: 'Staatliches', sans-serif; 
 */
 
 * {
@@ -11,9 +12,9 @@ font-family: 'Meera Inimai', sans-serif;
 }
 
 body {
-  background-color: #555;
-  font-family: 'Meera Inimai', sans-serif; 
-  color: burlywood;
+  background-color: #333;
+  font-family: 'Stylish', sans-serif; 
+  color: #afafaf;
 }
 
 header {
@@ -23,15 +24,17 @@ header {
   position: fixed;
   width: 240px;
   height: 100%;
-  border-right: dashed 5px #292929;
+  border-right: dashed 3px black;
   float: left;
   text-align: right;
   padding: 0 20px;
   top: 0;
 }
 header h1 {
-  font-family: 'Kodchasan', sans-serif;
-  color: tomato;
+  font-family: 'Kite One', sans-serif;
+  color: #ddd;
+  font-size: 2.3em;
+  margin-bottom: 10px;
 }
 
 .content{
@@ -43,11 +46,28 @@ header h1 {
 
 article {
   margin-left: 240px;
-  border-bottom: dashed 5px #292929;
+  border-bottom: dashed 3px black;
   padding: 20px;
 }
 
 article h1 { 
   margin-top: 0;
+  color: #ddd
 }
 
+.contact-info, .about-me {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.2em;
+}
+
+.contact-info div {
+  margin-top: 5px;
+}
+
+.contact-info a {
+  margin: 0 5px;
+}
+
+a {
+  color: #afafaf;
+}
