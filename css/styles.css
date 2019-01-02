@@ -24,7 +24,7 @@ header {
   position: fixed;
   width: 240px;
   height: 100%;
-  border-right: dashed 3px black;
+  border-right: solid 2px black;
   float: left;
   text-align: right;
   padding: 0 20px;
@@ -46,18 +46,40 @@ header h1 {
 
 article {
   margin-left: 240px;
-  border-bottom: dashed 3px black;
+  border-bottom: solid 2px black;
   padding: 20px;
 }
 
-article h1 { 
+.project-title { 
   margin-top: 0;
+  margin-bottom: 3px;
   color: #ddd
+}
+
+.project-description {
+  color: #ddd;
+  font-family: 'Lato', sans-serif;
+}
+
+.project-links { 
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.technologies {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .contact-info, .about-me {
   font-family: 'Stylish', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+
+.about-me {
+  margin: 15px 0;
 }
 
 .contact-info div {
@@ -70,4 +92,24 @@ article h1 {
 
 a {
   color: #afafaf;
+}
+
+@media only screen and (max-width: 650px) {
+    header {
+      position: static;
+      width: 100%;
+      border-right: none;
+      border-bottom: solid 2px black;
+      text-align: center;
+    }
+
+    .content {
+      padding-top: 0;
+    }
+
+    article {
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 }
