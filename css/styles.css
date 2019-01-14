@@ -1,0 +1,115 @@
+/* 
+font-family: 'Acme', sans-serif;
+font-family: 'Kodchasan', sans-serif;
+font-family: 'Stylish', sans-serif;
+font-family: 'Kite One', sans-serif;
+font-family: 'Meera Inimai', sans-serif; 
+font-family: 'Staatliches', sans-serif; 
+*/
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: #333;
+  font-family: 'Roboto', sans-serif; 
+  color: #afafaf;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  border-right: solid 2px black;
+  float: left;
+  text-align: right;
+  padding: 0 20px;
+  top: 0;
+}
+header h1 {
+  font-family: 'Lato', sans-serif;
+  color: #ddd;
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+.content{
+  margin: auto;
+  max-width: 800px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+article {
+  margin-left: 240px;
+  border-bottom: solid 2px black;
+  padding: 20px;
+}
+
+.project-title { 
+  margin-top: 0;
+  margin-bottom: 3px;
+  color: #ddd
+}
+
+.project-description {
+  color: #ddd;
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-links { 
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.technologies {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.contact-info, .about-me {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+}
+
+.about-me {
+  margin: 15px 0;
+}
+
+.contact-info div {
+  margin-top: 5px;
+}
+
+.contact-info a {
+  margin: 0 5px;
+}
+
+a {
+  color: #afafaf;
+}
+
+@media only screen and (max-width: 650px) {
+    header {
+      position: static;
+      width: 100%;
+      border-right: none;
+      border-bottom: solid 2px black;
+      text-align: center;
+    }
+
+    .content {
+      padding-top: 0;
+    }
+
+    article {
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+}
