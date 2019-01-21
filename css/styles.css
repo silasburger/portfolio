@@ -60,6 +60,13 @@ article {
   color: #ddd
 }
 
+.project-title a { 
+  margin-top: 0;
+  margin-bottom: 3px;
+  text-decoration: none;
+  color: #ddd
+}
+
 .project-description {
   color: #ddd;
   font-family: 'Roboto', sans-serif;
