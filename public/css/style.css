@@ -137,6 +137,12 @@ a {
   justify-content: space-evenly;
 }
 
+article > img {
+  display: block;
+  box-shadow: -10px 10px 20px -5px #131313;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 650px) {
   header {
     position: static;
