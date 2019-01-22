@@ -11,12 +11,12 @@ secondary color: goldenrod
 */
 
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
   background-color: #333;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   color: #afafaf;
 }
 
@@ -41,7 +41,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-.content{
+.content {
   margin: auto;
   max-width: 800px;
   padding-top: 10vh;
@@ -54,17 +54,17 @@ article {
   padding: 20px;
 }
 
-.project-title { 
+.project-title {
   margin-top: 0;
   margin-bottom: 3px;
-  color: #ddd
+  color: #ddd;
 }
 
-.project-title a { 
+.project-title a {
   margin-top: 0;
   margin-bottom: 3px;
   text-decoration: none;
-  color: #ddd
+  color: #ddd;
 }
 
 .project-description {
@@ -72,18 +72,39 @@ article {
   font-family: 'Roboto', sans-serif;
 }
 
-.project-links { 
+.project-links {
   display: flex;
   flex-direction: column;
   justify-content: left;
   margin-top: 16px;
 }
 
+#project-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#project-list a {
+  text-decoration: none;
+}
+
+#project-list li {
+  margin-top: 10px;
+}
+#project-list li:hover {
+}
+
+#project-list div {
+  font-size: 1.4em;
+  color: #ddd;
+}
+
 .project-summary {
   font-family: 'Roboto', sans-serif;
 }
 
-.contact-info, .about-me {
+.contact-info,
+.about-me {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
 }
@@ -92,13 +113,19 @@ article {
   margin: 15px 0;
 }
 
+.contact-info, #project-list {
+  margin-right: 15px;
+}
+
 .contact-info div {
   margin-top: 10px;
 }
 
 .contact-info a {
-  margin: 0 10px;
   text-decoration: none;
+}
+.contact-info a:nth-child(even) {
+  margin-left: 25px;
 }
 
 a {
@@ -108,29 +135,41 @@ a {
 .imgs-container {
   display: flex;
   justify-content: space-evenly;
-} 
+}
 
 @media only screen and (max-width: 650px) {
-    header {
-      position: static;
-      width: 100%;
-      border-right: none;
-      border-bottom: solid 2px black;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+  header {
+    position: static;
+    width: 100%;
+    border-right: none;
+    border-bottom: solid 2px black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-    #project-list {
-      display: none;
-    }
+  header>h1{
+    margin-top: 20px;    
+  }
 
-    .content {
-      padding-top: 0;
-    }
+  #project-list {
+    display: none;
+  }
 
-    article {
-      margin: 0;
-      padding: 20px;
-    }
+  .contact-info {
+    margin-right: 0;
+  }
+
+  #burger-img {
+    display: none;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
+  article {
+    margin: 0;
+    padding: 20px;
+  }
 }
