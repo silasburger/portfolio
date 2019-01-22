@@ -1,4 +1,6 @@
 #About me
+I grew up in the Bay Area, went to school in Vermont, and worked at a marketing agency in Boston for two years before returning home to attend code school in San Francisco. I am primarily a fullstack JS developer but I have experience working on Flask and Rails as well as mobile with React Native. The language I'm most excited to learn in Rust as it 
+
 After growing up in Berkeley I spent six years living in Burlington (Vermont), Buenos Aires, Dublin, and Boston. I'm also very excited to have recently obtained Irish citizenship. Since leaving my job in Boston I have taken every opportunity to become a software engineer from moving back home to Berkeley to spending long days learning the technologies that inspire me. I hope to use everything that I have learned along my path to contribute to a codebase that can change the world we live in for the better.
 
 #Course Report
@@ -14,7 +16,7 @@ A job search web app with complete with search functionality and authentication.
 This project taught me about the rules of react (don't duplicate keys) and allowed me to exercise my knowledge of the react lifecycle to build my take on the classic arcade game. The snake gets faster as it grows!
 
 #Warler
-
+Built server-side rendered twitter clone in Flask. This project taught me how to build a site with no frontend, relying on HTML templating and http requests to the server. Working with flask allowed me to learn about auth patterns, the concept of a global user, and sessions.
 
 #Projects
 Jobly (React,  Express, PostgreSQL)
