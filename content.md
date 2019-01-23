@@ -11,11 +11,12 @@ As part of my internship at Course Report I helped build an MVP mobile app that 
 I built the frontend using Redux, React, and Bootstrap. Users can write, edit, comment, and vote. Posts are ranked on the frontpage of the site. The primary focus of this project was to design a heirarchy that connects components to Redux in a strategic and thoughtful manner. An interesting part of this project was using the combineReducers Redux feature to separate reducers for different objects in the store.
 
 #Jobly
-A job search site with authentication and search functionality. I implemented RESTful APIs for User, Job, and Company resources with Express and used PostgreSQL as the database. The frontend uses 
 
-I built both the frontend and backend using PostgreSQL, Express, React, and Bootstrap.
+The site features authentication and search functionality so that users can login and easily find jobs that they're interested in. When users apply for jobs the status of their application is remembered upon logout. I built the backend using Express and the frontend using React.
 
-Implemented and tested RESTful APIs for User, Job, and Company resources. Added authorization and validation middleware to routes. Created React frontend that allows users to search for companies/jobs and apply for jobs.
+<!--I built both the frontend and backend using PostgreSQL, Express, React, and Bootstrap.
+
+Implemented and tested RESTful APIs for User, Job, and Company resources. Added authorization and validation middleware to routes. Created React frontend that allows users to search for companies/jobs and apply for jobs.-->
 
 #React Snake
 I exercised my knowledge of the React lifecycle to build my take on the classic arcade game. The snake gets faster as it grows!
