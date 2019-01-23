@@ -27,7 +27,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato|Roboto|Montserrat"
+      href="https://fonts.googleapis.com/css?family=Lato|Roboto|Montserrat|Muli"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
@@ -74,7 +74,7 @@
 
         <article>
           <h1 class="project-title">About Me</h1>
-          <p class="about-me">
+          <p class="project-description">
             After growing up in Berkeley I spent six years living in Burlington
             (Vermont), Buenos Aires, Dublin, and Boston. I'm also very excited
             to have recently obtained Irish citizenship. Since leaving my job in
@@ -90,10 +90,13 @@
           <h1 class="project-title">Course Report</h1>
           <div class="project-summary">Mobile Application and Proxy Server</div>
           <p class="project-description">
-            Built a mobile app allows Course Report users to read their blog,
-            and contact schools. The proxy server uses a redis cache to store
-            data retrieved from core rails server to reduce the number of
-            requests and improve response time.
+            As part of my internship at Course Report I helped build an MVP
+            mobile app that allows users to read blog articles and view/contact
+            schools. The project leveraged an Express proxy server to
+            periodically retrieve school and blog data from the core rails
+            server, store it in a redis cache, and serve it to the mobile app
+            using RESTful standards. The app features auto-pagination while
+            scrolling, fuzzy search, and sort by location functionality.
           </p>
           <div class="imgs-container">
             <img src="assets/phone2.png" width="40%" height="40%" />
@@ -118,14 +121,17 @@
             >
           </h1>
           <div class="project-summary">Blog Application Frontend</div>
-          <p class="project-description">Description</p>
-          <img src="assets/microblog.png" alt="microblog-photo" width="90%" />
-          <p>Here is some text</p>
-          <p>Here is some text</p>
-          <div class="project-links">
-            <a href="">Proxy Server on Github</a>
-            <a href="">Course Report Mobile on Github</a>
-          </div>
+          <p class="project-description">
+            I built the frontend using Redux, React, and Bootstrap. Users can
+            write, edit, comment, and vote. Posts are ranked on the frontpage of
+            the site. The primary focus of this project was to design a
+            heirarchy that connects components to Redux in a strategic and
+            thoughtful manner. An interesting part of this project was using the
+            combineReducers Redux feature to separate reducers for different
+            objects in the store.
+          </p>
+          <img src="assets/microblog.png" alt="microblog-photo" width="60%" />
+          <div class="project-links"><a href="">Microblog on Github</a></div>
         </article>
         <article id="jobly">
           <h1 class="project-title">
@@ -136,7 +142,7 @@
           <div class="project-summary">Job Search App</div>
           <p class="project-description">Description</p>
           <p>Here is some text</p>
-          <img src="assets/jobly.png" alt="placeholder" width="90%"/>
+          <img src="assets/jobly.png" alt="placeholder" width="50%" />
           <p>Here is some text</p>
           <div class="project-links">
             <a href="">Proxy Server on Github</a>
@@ -150,11 +156,24 @@
             >
           </h1>
           <div class="project-summary">Classic Snake Built in React</div>
-          <p class="project-description">Description</p>
+          <p class="project-description">
+            I exercised my knowledge of the React lifecycle to build my take on
+            the classic arcade game. The snake gets faster as it grows! While
+            making the game I ran into a number of React specific problems that
+            I had to overcome. For example, elements with duplicate keys
+            dropping from the virtual DOM.
+          </p>
           <img src="assets/snake.png" alt="snake" width="60%" />
-          <p>Here is some text</p>
-          <img src="https://via.placeholder.com/150" alt="placeholder" />
-          <p>Here is some text</p>
+          <iframe
+            src="https://react-snakely.netlify.com/"
+            width="100%"
+            height="100%"
+          ></iframe>
+          <p class="project-description">
+            While making the game I ran into a number of React specific problems
+            that I had to overcome. For example, elements with duplicate keys
+            dropping from the virtual DOM.
+          </p>
           <div class="project-links">
             <a href="">Proxy Server on Github</a>
             <a href="">Course Report Mobile on Github</a>
@@ -167,11 +186,14 @@
             >
           </h1>
           <div class="project-summary">Twitter Clone</div>
-          <p class="project-description">Description</p>
           <img src="assets/warbler.png" alt="placeholder" width="90%" />
-          <p>Here is some text</p>
-          <img src="https://via.placeholder.com/150" alt="placeholder" />
-          <p>Here is some text</p>
+          <p class="project-description">
+            I Built server-side rendered Twitter clone in Flask. This project
+            taught me how to build a site with no frontend, relying on
+            server-side templating and HTML responses. Working with Flask, I
+            learned about auth patterns, the concept of a global user, and
+            sessions.
+          </p>
           <div class="project-links">
             <a href="">Proxy Server on Github</a>
             <a href="">Course Report Mobile on Github</a>
