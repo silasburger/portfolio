@@ -145,6 +145,16 @@ article > img {
   margin: 0 auto;
 }
 
+#snake-iframe {
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+  height: 350px;
+  width: 350px;
+  border: none;
+  box-shadow: -10px 10px 20px -5px #131313;
+}
+
 @media only screen and (max-width: 650px) {
   header {
     position: static;
