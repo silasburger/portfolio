@@ -15,9 +15,9 @@ secondary color: goldenrod
 }
 
 body {
-  background-color: #333;
+  background-color: #131d27;
   font-family: 'Roboto', sans-serif;
-  color: #afafaf;
+  color: #bfbfbf;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
   position: fixed;
   width: 300px;
   height: 100%;
-  border-right: solid 2px black;
+  border-right: solid 2px #494949;
   float: left;
   text-align: right;
   padding: 0 20px;
@@ -36,7 +36,7 @@ header {
 }
 header h1 {
   font-family: 'Lato', sans-serif;
-  color: #ddd;
+  color: white;
   font-size: 2.3em;
   margin-top: 0;
   margin-bottom: 10px;
@@ -51,25 +51,29 @@ header h1 {
 
 article {
   margin-left: 300px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px #494949;
   padding: 20px;
+}
+
+article:last-child {
+  border-bottom: none;
 }
 
 .project-title {
   margin-top: 0;
   margin-bottom: 3px;
-  color: #ddd;
+  color: white;
 }
 
 .project-title a {
   margin-top: 0;
   margin-bottom: 3px;
   text-decoration: none;
-  color: #ddd;
+  color: white;
 }
 
 .project-description {
-  color: #ddd;
+  color: #efefef;
   font-family: 'Muli', sans-serif;
   line-height: 25px;
 }
@@ -93,12 +97,10 @@ article {
 #project-list li {
   margin-top: 10px;
 }
-#project-list li:hover {
-}
 
 #project-list div {
   font-size: 1.4em;
-  color: #ddd;
+  color: white;
 }
 
 .project-summary {
@@ -115,7 +117,8 @@ article {
   margin: 15px 0;
 }
 
-.contact-info, #project-list {
+.contact-info,
+#project-list {
   margin-right: 15px;
 }
 
@@ -130,8 +133,13 @@ article {
   margin-left: 25px;
 }
 
+.contact-info i {
+  color: #797979;
+  font-size: 0.85em;
+}
+
 a {
-  color: #afafaf;
+  color: #bfbfbf;
 }
 
 .imgs-container {
@@ -155,6 +163,10 @@ article > img {
   box-shadow: -10px 10px 20px -5px #131313;
 }
 
+#burger-img-container {
+  text-align: right;
+}
+
 @media only screen and (max-width: 650px) {
   header {
     position: static;
@@ -166,8 +178,8 @@ article > img {
     text-align: center;
   }
 
-  header>h1{
-    margin-top: 20px;    
+  header > h1 {
+    margin-top: 20px;
   }
 
   #project-list {
