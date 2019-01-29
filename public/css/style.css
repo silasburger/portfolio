@@ -79,10 +79,21 @@ article:last-child {
 }
 
 .project-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  margin-top: 16px;
+  float: right;
+}
+
+.project-links a {
+  line-height: 2em;
+  margin-left: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  background-color: #797979;
+  float: right;
+  font-size: 20px;
+  color: #131d27;
 }
 
 #project-list {
@@ -153,6 +164,10 @@ article > img {
   margin: 0 auto;
 }
 
+article > h1 {
+  display: inline-block;
+}
+
 #snake-iframe {
   margin: 0 auto;
   display: block;
@@ -172,7 +187,7 @@ article > img {
     position: static;
     width: 100%;
     border-right: none;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #494949;
     padding-bottom: 20px;
     margin-bottom: 20px;
     text-align: center;
