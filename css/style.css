@@ -94,6 +94,11 @@ article:last-child {
   float: right;
   font-size: 20px;
   color: #131d27;
+  transition: background-color .5s ease-in-out;
+}
+
+.project-links a:hover {
+  background-color: #03a9f9;
 }
 
 #project-list {
@@ -103,6 +108,12 @@ article:last-child {
 
 #project-list a {
   text-decoration: none;
+  transition: color .5s ease-in-out;
+}
+
+#project-list a:hover {
+  text-decoration: none;
+  color: goldenrod;
 }
 
 #project-list li {
