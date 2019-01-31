@@ -148,17 +148,11 @@ article:last-child {
 
 #about-me {
   text-align: center;
-  background-color: #bfbfbf;
-  color: #131d27;
-  width: 70%;
-  border-radius: 20px;
-  padding: 20px;
-  border: 5px solid #03a9f9;
+  color: white;
 }
 
 #about-me p {
   font-size: 1.2em;
-  text-align: left;
   font-weight: bold;
 }
 
