@@ -34,12 +34,20 @@
     <title>Silas Burger</title>
   </head>
 
-  <body>
+  <body class="no-scroll">
     <div class="wrapper">
+      <div id="overlay">
+        <div class="loader">Loading...</div>
+
+      </div>
       <div class="content">
         <header>
           <div class="burger-img-container">
-            <img id="burger-img" src="assets/burger.png" width="75%" />
+            <img
+              id="burger-img"
+              src="assets/burger.png"
+              width="75%"
+            />
           </div>
           <h1>Silas Burger</h1>
           <div class="contact-info">
@@ -69,143 +77,137 @@
             <li><a href="#warbler">Warbler</a></li>
           </ul>
         </header>
-        <div class="portfolio-container">
-          <article id="course-report">
-            <h1 class="project-title">Course Report Mobile</h1>
-            <div class="project-links">
-              <a href="https://github.com/rithmschool/cr-native" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="project-summary">
-              Mobile App and Proxy Server
-            </div>
-            <p class="project-description">
-              As part of my internship at Course Report I helped build an MVP
-              mobile app that allows users to read blog articles and
-              view/contact schools. The project leveraged an Express proxy
-              server to periodically retrieve school and blog data from the core
-              rails server, store it in a redis cache, and serve it to the
-              mobile app using RESTful standards. The app features
-              auto-pagination while scrolling, fuzzy search, and sort by
-              location functionality.
-            </p>
-            <div class="imgs-container">
-              <img src="assets/phone2.png" width="40%" height="40%" />
-              <img src="assets/phone1.png" width="40%" height="40%" />
-            </div>
-          </article>
 
-          <article id="microblog">
-            <h1 class="project-title">
-              <a
-                href="https://microblogly-frontend.herokuapp.com/"
-                target="_blank"
-                >Microblog</a
-              >
-            </h1>
-            <div class="project-links">
-              <a
-                href="https://microblogly-frontend.herokuapp.com/"
-                target="_blank"
-                ><i class="fas fa-link"></i
-              ></a>
-              <a href="https://github.com/silasburger/microblog" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="project-summary">Blog App Frontend</div>
-            <p class="project-description">
-              I built the frontend using Redux, React, and Bootstrap. Users can
-              write, edit, comment, and vote. Posts are ranked on the frontpage
-              of the site. The primary focus of this project was to design a
-              heirarchy that connects components to Redux in a strategic and
-              thoughtful manner. An interesting part of this project was using
-              the combineReducers Redux feature to separate reducers for
-              different objects in the store.
-            </p>
-            <img src="assets/microblog.png" alt="microblog-photo" width="80%" />
-          </article>
-          <article id="jobly">
-            <h1 class="project-title">
-              <a href="https://joblyyy-front.herokuapp.com/" target="_blank"
-                >Jobly</a
-              >
-            </h1>
-            <div class="project-links">
-              <a href="https://joblyyy-front.herokuapp.com/" target="_blank"
-                ><i class="fas fa-link"></i
-              ></a>
-              <a href="https://github.com/silasburger/jobly" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="project-summary">Job Search App</div>
-            <p class="project-description">
-              The site features authentication and search functionality so that
-              users can login and easily find jobs that they're interested in.
-              When users apply for jobs the status of their application is
-              remembered upon logout. I built the backend using Express and the
-              frontend using React.
-            </p>
-            <img src="assets/jobly.png" alt="placeholder" width="80%" />
-          </article>
-          <article id="react-snake">
-            <h1 class="project-title">
-              <a href="https://react-snakely.netlify.com" target="_blank"
-                >React Snake</a
-              >
-            </h1>
-            <div class="project-links">
-              <a href="https://react-snakely.netlify.com" target="_blank"
-                ><i class="fas fa-link"></i
-              ></a>
-              <a
-                href="https://github.com/silasburger/react-snake"
-                target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="project-summary">Classic Snake Built in React</div>
-            <p class="project-description">
-              I exercised my knowledge of the React lifecycle to build my take
-              on the classic arcade game. The snake gets faster as it grows!
-            </p>
-            <iframe
-              id="snake-iframe"
-              src="https://react-snakely.netlify.com/"
-            ></iframe>
-            <p class="project-description">
-              While making the game I ran into a number of React specific
-              problems that I had to overcome. For example, elements with
-              duplicate keys dropping from the virtual DOM.
-            </p>
-          </article>
-          <article id="warbler">
-            <h1 class="project-title">
-              <a href="https://warblarblarg.herokuapp.com/" target="_blank"
-                >Warbler</a
-              >
-            </h1>
-            <div class="project-links">
-              <a href="https://warblarblarg.herokuapp.com/" target="_blank"
-                ><i class="fas fa-link"></i
-              ></a>
-              <a href="https://github.com/silasburger/warbler" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="project-summary">Twitter Clone</div>
-            <p class="project-description">
-              I Built server-side rendered Twitter clone in Flask. This project
-              taught me how to build a site with no frontend, relying on
-              server-side templating and HTML responses. Working with Flask, I
-              learned about auth patterns, the concept of a global user, and
-              sessions.
-            </p>
-            <img src="assets/warbler.png" alt="placeholder" width="80%" />
-          </article>
-        </div>
+        <article id="course-report">
+          <h1 class="project-title">Course Report Mobile</h1>
+          <div class="project-links">
+            <a href="https://github.com/rithmschool/cr-native" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-summary">Mobile App and Proxy Server</div>
+          <p class="project-description">
+            As part of my internship at Course Report I helped build an MVP
+            mobile app that allows users to read blog articles and view/contact
+            schools. The project leveraged an Express proxy server to
+            periodically retrieve school and blog data from the core rails
+            server, store it in a redis cache, and serve it to the mobile app
+            using RESTful standards. The app features auto-pagination while
+            scrolling, fuzzy search, and sort by location functionality.
+          </p>
+          <div class="imgs-container">
+            <img src="assets/phone2.png" width="40%" height="40%" />
+            <img src="assets/phone1.png" width="40%" height="40%" />
+          </div>
+        </article>
+
+        <article id="microblog">
+          <h1 class="project-title">
+            <a
+              href="https://microblogly-frontend.herokuapp.com/"
+              target="_blank"
+              >Microblog</a
+            >
+          </h1>
+          <div class="project-links">
+            <a
+              href="https://microblogly-frontend.herokuapp.com/"
+              target="_blank"
+              ><i class="fas fa-link"></i
+            ></a>
+            <a href="https://github.com/silasburger/microblog" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-summary">Blog App Frontend</div>
+          <p class="project-description">
+            I built the frontend using Redux, React, and Bootstrap. Users can
+            write, edit, comment, and vote. Posts are ranked on the frontpage of
+            the site. The primary focus of this project was to design a
+            heirarchy that connects components to Redux in a strategic and
+            thoughtful manner. An interesting part of this project was using the
+            combineReducers Redux feature to separate reducers for different
+            objects in the store.
+          </p>
+          <img src="assets/microblog.png" alt="microblog-photo" width="80%" />
+        </article>
+        <article id="jobly">
+          <h1 class="project-title">
+            <a href="https://joblyyy-front.herokuapp.com/" target="_blank"
+              >Jobly</a
+            >
+          </h1>
+          <div class="project-links">
+            <a href="https://joblyyy-front.herokuapp.com/" target="_blank"
+              ><i class="fas fa-link"></i
+            ></a>
+            <a href="https://github.com/silasburger/jobly" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-summary">Job Search App</div>
+          <p class="project-description">
+            The site features authentication and search functionality so that
+            users can login and easily find jobs that they're interested in.
+            When users apply for jobs the status of their application is
+            remembered upon logout. I built the backend using Express and the
+            frontend using React.
+          </p>
+          <img src="assets/jobly.png" alt="placeholder" width="80%" />
+        </article>
+        <article id="react-snake">
+          <h1 class="project-title">
+            <a href="https://react-snakely.netlify.com" target="_blank"
+              >React Snake</a
+            >
+          </h1>
+          <div class="project-links">
+            <a href="https://react-snakely.netlify.com" target="_blank"
+              ><i class="fas fa-link"></i
+            ></a>
+            <a href="https://github.com/silasburger/react-snake" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-summary">Classic Snake Built in React</div>
+          <p class="project-description">
+            I exercised my knowledge of the React lifecycle to build my take on
+            the classic arcade game. The snake gets faster as it grows!
+          </p>
+          <iframe
+            id="snake-iframe"
+            src="https://react-snakely.netlify.com/"
+          ></iframe>
+          <p class="project-description">
+            While making the game I ran into a number of React specific problems
+            that I had to overcome. For example, elements with duplicate keys
+            dropping from the virtual DOM.
+          </p>
+        </article>
+        <article id="warbler">
+          <h1 class="project-title">
+            <a href="https://warblarblarg.herokuapp.com/" target="_blank"
+              >Warbler</a
+            >
+          </h1>
+          <div class="project-links">
+            <a href="https://warblarblarg.herokuapp.com/" target="_blank"
+              ><i class="fas fa-link"></i
+            ></a>
+            <a href="https://github.com/silasburger/warbler" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-summary">Twitter Clone</div>
+          <p class="project-description">
+            I Built server-side rendered Twitter clone in Flask. This project
+            taught me how to build a site with no frontend, relying on
+            server-side templating and HTML responses. Working with Flask, I
+            learned about auth patterns, the concept of a global user, and
+            sessions.
+          </p>
+          <img src="assets/warbler.png" alt="placeholder" width="80%" />
+        </article>
       </div>
     </div>
 
