@@ -34,14 +34,18 @@
     <title>Silas Burger</title>
   </head>
 
-  <body>
+  <body class="no-scroll">
     <div class="wrapper">
+      <div id="overlay">
+        <div class="loader">Loading...</div>
+
+      </div>
       <div class="content">
         <header>
           <div class="burger-img-container">
             <img
               id="burger-img"
-              src="assets/0d851dccac693098d48b9872970034cb-cheeseburger-flat-icon-by-vexels.png"
+              src="assets/burger.png"
               width="75%"
             />
           </div>
@@ -63,8 +67,6 @@
                 ><i class="fab fa-twitter"></i> Twitter</a
               >
             </div>
-            <div><i class="fas fa-at"></i> silas.a.burger@gmail.com</div>
-            <div><i class="fas fa-phone"></i> 510.387.5564</div>
           </div>
           <ul id="project-list">
             <div>Projects</div>
@@ -76,33 +78,14 @@
           </ul>
         </header>
 
-        <article id="intro">
-          <div id="about-me">
-            <h1>Hi, I'm Silas!</h1>
-            <p>
-              I'm a software engineer with experience in growth-focused
-              marketing. I have worked with JavaScript, Python, React, React
-              Native, Redux, Node.js, Express, PostgreSQL, and Flask. I
-              previously designed, launched, and managed A/B tests with ECI, an
-              ecommerce marketing agency, where I helped clients to make
-              data-driven business decisions.
-            </p>
-            <p>Scroll down the page to see my latest projects. Shoot me an email or give me a call me if you would like to connect.</p>
-            <p></p>
-          </div>
-        </article>
-
         <article id="course-report">
-          <h1 class="project-title">Course Report</h1>
+          <h1 class="project-title">Course Report Mobile</h1>
           <div class="project-links">
             <a href="https://github.com/rithmschool/cr-native" target="_blank"
-              ><i class="fas fa-link"></i
-            ></a>
-            <a href="https://github.com/rithmschool/cr-proxy" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
           </div>
-          <div class="project-summary">Mobile Application and Proxy Server</div>
+          <div class="project-summary">Mobile App and Proxy Server</div>
           <p class="project-description">
             As part of my internship at Course Report I helped build an MVP
             mobile app that allows users to read blog articles and view/contact
@@ -136,7 +119,7 @@
               ><i class="fab fa-github"></i
             ></a>
           </div>
-          <div class="project-summary">Blog Application Frontend</div>
+          <div class="project-summary">Blog App Frontend</div>
           <p class="project-description">
             I built the frontend using Redux, React, and Bootstrap. Users can
             write, edit, comment, and vote. Posts are ranked on the frontpage of
