@@ -38,18 +38,22 @@
     <div class="wrapper">
       <div id="overlay">
         <div class="loader">Loading...</div>
-
       </div>
       <div class="content">
         <header>
           <div class="burger-img-container">
-            <img
-              id="burger-img"
-              src="assets/burger.png"
-              width="75%"
-            />
+            <img id="burger-img" src="assets/burger.png" width="75%" />
           </div>
           <h1>Silas Burger</h1>
+          <div><a href="/about">About Me</a></div>
+          <ul id="project-list">
+            <div><a href="/">Projects</a></div>
+            <li><a href="#course-report">Coure Report Mobile</a></li>
+            <li><a href="#microblog">Microblog</a></li>
+            <li><a href="#jobly">Jobly</a></li>
+            <li><a href="#react-snake">React Snake</a></li>
+            <li><a href="#warbler">Warbler</a></li>
+          </ul>
           <div class="contact-info">
             <div>
               <a href="https://github.com/silasburger" target="_blank"
@@ -68,14 +72,6 @@
               >
             </div>
           </div>
-          <ul id="project-list">
-            <div>Projects</div>
-            <li><a href="#course-report">Coure Report Mobile</a></li>
-            <li><a href="#microblog">Microblog</a></li>
-            <li><a href="#jobly">Jobly</a></li>
-            <li><a href="#react-snake">React Snake</a></li>
-            <li><a href="#warbler">Warbler</a></li>
-          </ul>
         </header>
 
         <article id="course-report">
@@ -172,7 +168,8 @@
           <div class="project-summary">Classic Snake Built in React</div>
           <p class="project-description">
             I exercised my knowledge of the React lifecycle to build my take on
-            the classic arcade game. Click on the game and use the arrow keys to give it a whirl. The snake gets faster as it grows!
+            the classic arcade game. Click on the game and use the arrow keys to
+            give it a whirl. The snake gets faster as it grows!
           </p>
           <iframe
             id="snake-iframe"
