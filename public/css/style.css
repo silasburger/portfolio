@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+/* 
+####################
+Layout CSS 
+####################
+*/
+
 body {
   background-color: #131d27;
   font-family: 'Roboto', sans-serif;
@@ -18,8 +24,7 @@ header {
   border-right: solid 2px #494949;
   float: left;
   text-align: right;
-  padding: 0 20px;
-  padding-bottom: 100px;
+  padding: 0 20px 50px 20px;
   top: 0;
 }
 
@@ -29,8 +34,12 @@ header {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  z-index: 10;  
+  z-index: 10;
   background-color: #131d27;
+}
+
+.top-nav {
+  display: none;
 }
 
 .hidden {
@@ -41,18 +50,11 @@ header {
   overflow: hidden;
 }
 
-header h1 {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-size: 2.3em;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 .content {
   margin: auto;
-  max-width: 1100px;
+  max-width: 1500px;
   padding-top: 10vh;
+
   padding-bottom: 10vh;
 }
 
@@ -65,6 +67,12 @@ article {
 article:last-child {
   border-bottom: none;
 }
+
+/* 
+####################
+Project CSS 
+####################
+*/
 
 .project-title {
   margin-top: 0;
@@ -112,32 +120,54 @@ article:last-child {
   background-color: #03a9f9;
 }
 
-#project-list {
-  list-style: none;
-  margin-top: 20px;
+.project-summary {
+  font-family: 'Roboto', sans-serif;
 }
 
-#project-list a {
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+.imgs-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#project-list a:hover {
-  text-decoration: none;
-  color: #03a9f9;
+/* 
+####################
+Sidenav CSS 
+####################
+*/
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 2.3em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#project-list li {
-  margin-top: 10px;
-}
-
-#project-list div {
+.nav-link {
   font-size: 1.4em;
   color: white;
 }
 
-.project-summary {
-  font-family: 'Roboto', sans-serif;
+header a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+header .active {
+  color: goldenrod;
+}
+
+header .active:hover {
+  color: goldenrod;
+}
+
+header a:hover {
+  text-decoration: none;
+  color: #03a9f9;
+}
+
+header > div > a {
+  margin-right: 20px;
 }
 
 .contact-info,
@@ -145,17 +175,10 @@ article:last-child {
   font-size: 1em;
 }
 
-#intro {
-  height: 101vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #about-me {
   text-align: center;
   color: white;
+  padding-top: 0;
 }
 
 #about-me p {
@@ -163,18 +186,24 @@ article:last-child {
   font-weight: bold;
 }
 
+#project-list {
+  list-style: none;
+  margin: 20px;
+}
+
+#project-list li {
+  margin-top: 10px;
+}
+
 .contact-info,
 #project-list {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .contact-info div {
   margin-top: 10px;
 }
 
-.contact-info a {
-  text-decoration: none;
-}
 .contact-info a:nth-child(even) {
   margin-left: 25px;
 }
@@ -186,11 +215,6 @@ article:last-child {
 
 a {
   color: #bfbfbf;
-}
-
-.imgs-container {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 article > img {
@@ -214,6 +238,12 @@ article > h1 {
 #burger-img-container {
   text-align: right;
 }
+
+/* 
+####################
+Loader CSS 
+####################
+*/
 
 .loader,
 .loader:before,
@@ -274,6 +304,11 @@ article > h1 {
   }
 }
 
+/* 
+####################
+Mobile CSS 
+####################
+*/
 
 @media only screen and (max-width: 650px) {
   header {
@@ -290,7 +325,7 @@ article > h1 {
     margin-top: 20px;
   }
 
-  #intro {
+  header > div > a {
     display: none;
   }
 
@@ -313,5 +348,24 @@ article > h1 {
   article {
     margin: 0;
     padding: 20px;
+  }
+  .top-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .top-nav a {
+    line-height: 30px;
+    text-decoration: none;
+    height: 30px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    background-color: #03a9f9;
+  }
+
+  .top-nav a:nth-child(1) {
+    border-right: solid 3px #131d27;
   }
 }

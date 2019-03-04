@@ -36,6 +36,10 @@
 
   <body class="no-scroll">
     <div class="wrapper">
+      <div class="top-nav">
+        <a href="/">Projects</a>
+        <a href="/about">About Me</a>
+      </div>
       <div id="overlay">
         <div class="loader">Loading...</div>
       </div>
@@ -45,15 +49,15 @@
             <img id="burger-img" src="/assets/burger.png" width="75%" />
           </div>
           <h1>Silas Burger</h1>
-          <div><a href="/about">About Me</a></div>
           <ul id="project-list">
-            <div><a href="/">Projects</a></div>
-            <li><a href="#course-report">Coure Report Mobile</a></li>
-            <li><a href="#microblog">Microblog</a></li>
-            <li><a href="#jobly">Jobly</a></li>
-            <li><a href="#react-snake">React Snake</a></li>
-            <li><a href="#warbler">Warbler</a></li>
+            <div><a href="/" class="nav-link">Projects</a></div>
+            <li><a href="/#course-report">Coure Report Mobile</a></li>
+            <li><a href="/#microblog">Microblog</a></li>
+            <li><a href="/#jobly">Jobly</a></li>
+            <li><a href="/#react-snake">React Snake</a></li>
+            <li><a href="/#warbler">Warbler</a></li>
           </ul>
+          <div><a href="/about" class="nav-link active">About Me</a></div>
           <div class="contact-info">
             <div>
               <a href="https://github.com/silasburger" target="_blank"
@@ -73,9 +77,15 @@
             </div>
           </div>
         </header>
-        <article>
-          <img src="/assets/burger2.png" alt="Silas Burger" srcset="" />
-          <p class="project-description">
+        <article id="about-me">
+          <img
+            src="/assets/burger2.png"
+            alt="Silas Burger"
+            srcset=""
+            width="200px"
+            height="200px"
+          />
+          <p>
             I'm a software engineer with demonstrated experience in
             growth-focused marketing and web development. I'm experienced in
             JavaScript, Python, React, React Native, Redux, Node.js, Express,
