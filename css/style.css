@@ -1,15 +1,3 @@
-/* 
-font-family: 'Acme', sans-serif;
-font-family: 'Kodchasan', sans-serif;
-font-family: 'Stylish', sans-serif;
-font-family: 'Kite One', sans-serif;
-font-family: 'Meera Inimai', sans-serif; 
-font-family: 'Staatliches', sans-serif; 
-'ATC Harris', monospace
-
-secondary color: goldenrod
-*/
-
 * {
   box-sizing: border-box;
 }
@@ -71,7 +59,7 @@ header h1 {
 article {
   margin-left: 300px;
   border-bottom: solid 2px #494949;
-  padding: 20px;
+  padding: 50px;
 }
 
 article:last-child {
