@@ -154,11 +154,11 @@ header a {
 }
 
 header .active {
-  color: goldenrod;
+  color: white;
 }
 
 header .active:hover {
-  color: goldenrod;
+  color: white;
 }
 
 header a:hover {
