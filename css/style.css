@@ -15,15 +15,11 @@ body {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: fixed;
   width: 300px;
   height: 100%;
-  border-right: solid 2px #494949;
   float: left;
-  text-align: right;
+  text-align: center;
   padding: 0 20px 50px 20px;
   top: 0;
 }
@@ -53,15 +49,11 @@ header {
 .content {
   margin: auto;
   max-width: 1500px;
-  padding-top: 10vh;
-
   padding-bottom: 10vh;
 }
 
 .main-section {
   margin-left: 300px;
-  /* border-bottom: solid 2px #494949; */
-  /* padding: 50px; */
 }
 
 #projects article {
@@ -69,8 +61,17 @@ header {
   padding: 50px;
 }
 
+article {
+  background-color: #FFFFF0;
+  color: #131d27;
+}
+
 article:last-child {
   border-bottom: none;
+}
+
+footer {
+  text-align: center;
 }
 
 /* 
@@ -155,11 +156,11 @@ header h1 {
 
 .nav-link {
   font-size: 1.4em;
-  color: white;
+  color: #bfbfbf;
 }
 
 .nav-link.active {
-  color: goldenrod;
+  color: white;
 }
 
 header a {
@@ -168,7 +169,7 @@ header a {
 }
 
 li a.active {
-  color: tomato;
+  color: white;
 }
 
 header .active:hover {
@@ -177,7 +178,7 @@ header .active:hover {
 
 header a:hover {
   text-decoration: none;
-  color: #03a9f9;
+  color: #ddd;
 }
 
 header > div > a {
@@ -189,29 +190,13 @@ header > div > a {
   font-size: 1em;
 }
 
-#about-me {
-  text-align: center;
-  color: white;
-  padding-top: 0;
-}
-
-#about-me p {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-#project-list {
-  list-style: none;
+#navigation {
   margin: 20px;
 }
 
-#project-list li {
-  margin-top: 10px;
-}
-
-.contact-info,
-#project-list {
-  margin-right: 20px;
+#navigation ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .contact-info div {
@@ -391,5 +376,47 @@ About Me CSS
 */
 
 #about-me {
+  text-align: left;
+  color: black;
+  padding: 50px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#about-me img {
+  border-radius: 50%;
+  border: solid 5px #03a9f9; 
+}
+
+#about-me p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#floating-arrow {
+  text-align: center;
+  position: relative;
+}
+
+.fa-angle-double-down {
+  font-size: 3em;
+  position: absolute;
+  transform: translate(-50%);
+  animation: float 1s infinite;
+}
+
+@keyframes float {
+  0% {
+    top: 0px;
+  }
+
+  30% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0px;
+  }
 }

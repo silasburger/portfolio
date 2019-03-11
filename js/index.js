@@ -37,7 +37,7 @@ $(window)
       }
     });
     $('#projects article').each(function(i) {
-      if ($(this).position().top <= scrollDistance) {
+      if (Math.round($(this).position().top) <= scrollDistance) {
         $('#navigation li a.active').removeClass('active');
         $('#navigation li a')
           .eq(i)
