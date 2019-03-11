@@ -1,6 +1,52 @@
-window.onload = function() {
-  let overlay = document.querySelector('#overlay');
-  let body = document.body;
-  overlay.classList.toggle('hidden');
-  body.classList.toggle('no-scroll');
-};
+$(function() {
+  let $overlay = $('#overlay');
+  let $body = $('body');
+  $overlay.toggle();
+  $body.toggleClass('no-scroll');
+
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+
+    let target = this.hash;
+    let $target = $(target);
+
+    $('html, body')
+      .stop()
+      .animate(
+        {
+          scrollTop: $target.offset().top
+        },
+        900,
+        'swing',
+        function() {
+          window.location.hash = target;
+        }
+      );
+  });
+});
+$(window)
+  .scroll(function() {
+    let scrollDistance = $(window).scrollTop();
+    // Assign active class to nav links while scolling
+    $('.main-section').each(function(i) {
+      if ($(this).position().top <= scrollDistance) {
+        $('.nav-link.active').removeClass('active');
+        $('.nav-link')
+          .eq(i)
+          .addClass('active');
+      }
+    });
+    $('#projects article').each(function(i) {
+      if ($(this).position().top <= scrollDistance) {
+        $('#navigation li a.active').removeClass('active');
+        $('#navigation li a')
+          .eq(i)
+          .addClass('active');
+      }
+
+      if($('#projects').position().top + $('#projects').height() <= scrollDistance || $('#projects').position().top >= scrollDistance) {
+        $('#navigation li a.active').removeClass('active');
+      }
+    });
+
+  }).scroll();
