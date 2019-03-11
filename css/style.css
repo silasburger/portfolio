@@ -58,8 +58,13 @@ header {
   padding-bottom: 10vh;
 }
 
-article {
+.main-section {
   margin-left: 300px;
+  /* border-bottom: solid 2px #494949; */
+  /* padding: 50px; */
+}
+
+#projects article {
   border-bottom: solid 2px #494949;
   padding: 50px;
 }
@@ -73,6 +78,11 @@ article:last-child {
 Project CSS 
 ####################
 */
+
+#projects > h1 {
+  padding-left: 50px;
+  padding-top: 50px;
+}
 
 .project-title {
   margin-top: 0;
@@ -148,13 +158,17 @@ header h1 {
   color: white;
 }
 
+.nav-link.active {
+  color: goldenrod;
+}
+
 header a {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
-header .active {
-  color: white;
+li a.active {
+  color: tomato;
 }
 
 header .active:hover {
@@ -368,4 +382,14 @@ Mobile CSS
   .top-nav a:nth-child(1) {
     border-right: solid 3px #131d27;
   }
+}
+
+/* 
+####################
+About Me CSS 
+####################
+*/
+
+#about-me {
+  height: 100vh;
 }
