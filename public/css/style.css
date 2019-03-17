@@ -15,6 +15,9 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   position: fixed;
   width: 300px;
   height: 100%;
@@ -49,29 +52,39 @@ header {
 .content {
   margin: auto;
   max-width: 1500px;
-  padding-bottom: 10vh;
 }
 
 .main-section {
   margin-left: 300px;
+  margin-right: 12px;
+  border-top: solid 12px #131d27;
+
 }
 
-#projects article {
-  border-bottom: solid 2px #494949;
+#projects > article {
+  border-bottom: dashed 2px #131d27;
   padding: 50px;
+  height: 100vh;
 }
 
-article {
-  background-color: #FFFFF0;
-  color: #131d27;
-}
-
-article:last-child {
+#projects > article:last-child {
   border-bottom: none;
+}
+article {
+  background-color: #fffff0;
+  color: #131d27;
 }
 
 footer {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+}
+
+.main-section-header {
+  font-size: 50px;
 }
 
 /* 
@@ -85,21 +98,15 @@ Project CSS
   padding-top: 50px;
 }
 
-.project-title {
-  margin-top: 0;
-  margin-bottom: 3px;
-  color: white;
-}
-
-.project-title a {
+.project-title, .project-title a {
   margin-top: 0;
   margin-bottom: 3px;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .project-description {
-  color: #efefef;
+  color: black;
 }
 
 .project-description,
@@ -128,7 +135,7 @@ Project CSS
 }
 
 .project-links a:hover {
-  background-color: #03a9f9;
+  background-color: #4285f4;
 }
 
 .project-summary {
@@ -138,6 +145,12 @@ Project CSS
 .imgs-container {
   display: flex;
   justify-content: space-evenly;
+}
+
+article > img {
+  border-radius: 5px;
+  border: solid 1px #131d27;
+  box-shadow: 10px 10px 62px 0px rgba(0,0,0,0.75);
 }
 
 /* 
@@ -160,7 +173,7 @@ header h1 {
 }
 
 .nav-link.active {
-  color: white;
+  color: #4285f4;
 }
 
 header a {
@@ -169,7 +182,7 @@ header a {
 }
 
 li a.active {
-  color: white;
+  color: #03a9f9;
 }
 
 header .active:hover {
@@ -185,9 +198,12 @@ header > div > a {
   margin-right: 20px;
 }
 
-.contact-info,
-#about-me {
+.contact-info {
   font-size: 1em;
+}
+
+.contact-info a {
+  text-decoration: none;
 }
 
 #navigation {
@@ -200,11 +216,11 @@ header > div > a {
 }
 
 .contact-info div {
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .contact-info a:nth-child(even) {
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 .contact-info i {
@@ -332,10 +348,6 @@ Mobile CSS
     display: none;
   }
 
-  .contact-info {
-    margin-right: 0;
-  }
-
   #burger-img {
     display: none;
   }
@@ -375,22 +387,25 @@ About Me CSS
 ####################
 */
 
-#about-me {
+#about-me, #contact-me {
   text-align: left;
   color: black;
   padding: 50px;
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+#about-me {
   justify-content: flex-start;
 }
 
 #about-me img {
   border-radius: 50%;
-  border: solid 5px #03a9f9; 
+  border: solid 8px #03a9f9;
 }
 
-#about-me p {
+#about-me p, #contact-me p {
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -404,19 +419,35 @@ About Me CSS
   font-size: 3em;
   position: absolute;
   transform: translate(-50%);
-  animation: float 1s infinite;
+  animation: float 10s infinite;
 }
 
 @keyframes float {
-  0% {
+  90% {
     top: 0px;
   }
 
-  30% {
+  97% {
     top: 20px;
   }
 
   100% {
     top: 0px;
   }
+}
+
+/* 
+####################
+Contact Me CSS 
+####################
+*/
+
+#contact-me {
+  height: 80vh;
+  justify-content: flex-start;
+  line-height: 1.75em;
+}
+
+blockquote {
+  font-weight: bolder;
 }
