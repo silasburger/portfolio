@@ -120,6 +120,7 @@ Project CSS
 }
 
 .project-links a {
+  box-sizing: content-box;
   line-height: 2em;
   margin-left: 20px;
   text-align: center;
@@ -127,7 +128,7 @@ Project CSS
   border-radius: 100%;
   width: 2em;
   height: 2em;
-  background-color: #797979;
+  background-color: #4285F4;
   float: right;
   font-size: 20px;
   color: #131d27;
@@ -135,7 +136,7 @@ Project CSS
 }
 
 .project-links a:hover {
-  background-color: #4285f4;
+  trans: #03a9f5;
 }
 
 .project-summary {
@@ -167,31 +168,42 @@ header h1 {
   margin-bottom: 0;
 }
 
+#name-highlight {
+  color: #4285F4;
+}
+
 .nav-link {
   font-size: 1.4em;
-  color: #bfbfbf;
+  color: gray;
 }
 
 .nav-link.active {
-  color: #4285f4;
+  color: white;
 }
 
 header a {
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
 }
 
 li a.active {
-  color: #03a9f9;
+  color: white;
 }
 
-header .active:hover {
+li > a.active {
   color: white;
+}
+
+a {
+  color: gray;
+}
+
+li > a {
+  color: gray;
 }
 
 header a:hover {
   text-decoration: none;
-  color: #ddd;
+  color: #bfbfbf;
 }
 
 header > div > a {
@@ -226,10 +238,6 @@ header > div > a {
 .contact-info i {
   color: #797979;
   font-size: 0.85em;
-}
-
-a {
-  color: #bfbfbf;
 }
 
 article > img {
@@ -321,68 +329,6 @@ Loader CSS
 
 /* 
 ####################
-Mobile CSS 
-####################
-*/
-
-@media only screen and (max-width: 650px) {
-  header {
-    position: static;
-    width: 100%;
-    border-right: none;
-    border-bottom: solid 2px #494949;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  header > h1 {
-    margin-top: 20px;
-  }
-
-  header > div > a {
-    display: none;
-  }
-
-  #project-list {
-    display: none;
-  }
-
-  #burger-img {
-    display: none;
-  }
-
-  .content {
-    padding-top: 0;
-  }
-
-  article {
-    margin: 0;
-    padding: 20px;
-  }
-  .top-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-
-  .top-nav a {
-    line-height: 30px;
-    text-decoration: none;
-    height: 30px;
-    width: 50%;
-    text-align: center;
-    color: white;
-    background-color: #03a9f9;
-  }
-
-  .top-nav a:nth-child(1) {
-    border-right: solid 3px #131d27;
-  }
-}
-
-/* 
-####################
 About Me CSS 
 ####################
 */
@@ -402,7 +348,7 @@ About Me CSS
 
 #about-me img {
   border-radius: 50%;
-  border: solid 8px #03a9f9;
+  border: solid 8px #4285F4;
 }
 
 #about-me p, #contact-me p {
@@ -450,4 +396,73 @@ Contact Me CSS
 
 blockquote {
   font-weight: bolder;
+}
+
+/* 
+####################
+Mobile CSS 
+####################
+*/
+
+@media only screen and (max-width: 650px) {
+  header {
+    position: static;
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+
+  .main-section:first-child {
+    border-top: none;
+  }
+
+  header > h1 {
+    margin-top: 20px;
+  }
+
+  header > div > a {
+    display: none;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  #burger-img {
+    display: none;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
+  .main-section {
+    margin: 0;
+    padding: 20px;
+  }
+
+  #projects > article, #about-me, #contact-me {
+    height: auto;
+  }
+  
+
+  .top-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .top-nav a {
+    line-height: 30px;
+    text-decoration: none;
+    height: 30px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    background-color: #4285F4;
+  }
+
+  .top-nav a:nth-child(1) {
+    border-right: solid 3px #131d27;
+  }
 }
