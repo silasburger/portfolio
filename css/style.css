@@ -16,9 +16,9 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   position: fixed;
+  justify-content: center;
   width: 300px;
   height: 100%;
   float: left;
@@ -61,6 +61,7 @@ footer.main-section {
 
 .main-section-header {
   font-size: 50px;
+  text-align: center;
 }
 
 #projects > article {
@@ -106,6 +107,10 @@ Project CSS
 ####################
 */
 
+#projects {
+  padding-top: 50px;
+}
+
 #projects > h1 {
   padding-left: 50px;
   padding-top: 50px;
@@ -133,7 +138,6 @@ Project CSS
 }
 
 .project-links a {
-  box-sizing: content-box;
   line-height: 2em;
   margin-left: 20px;
   text-align: center;
@@ -154,6 +158,7 @@ Project CSS
 
 .imgs-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .imgs-container > img {
@@ -415,13 +420,40 @@ Mobile CSS
   header {
     position: static;
     width: 100%;
-    border-right: none;
     text-align: center;
+    padding: 0;
+    margin: 30px 0 10px 0;
+  }
+
+
+  #projects > article {
+    padding: 50px 0 50px 0;
   }
 
   #about-me {
+    padding: 50px 20px 50px 20px;
     border-top: none;
   }
+
+  #about-me .project-links {
+    float: none;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #about-me .project-links a {
+    margin: 0;
+  }
+
+  #contact-me > .main-section-header {
+    font-size: 40px;
+  }
+
+  #burger-img {
+    width: 30%;
+  }
+
 
   header > h1 {
     margin-top: 20px;
@@ -432,10 +464,6 @@ Mobile CSS
   }
 
   #navigation {
-    display: none;
-  }
-
-  #burger-img {
     display: none;
   }
 
@@ -454,6 +482,7 @@ Mobile CSS
   
 
   .top-nav {
+    position: fixed;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -469,8 +498,13 @@ Mobile CSS
     background-color: #4285F4;
   }
 
-  .top-nav a:nth-child(1) {
+  .top-nav a:nth-child(2) {
     border-right: solid 3px #131d27;
+    border-left: solid 3px #131d27;
+  }
+
+  .imgs-container > img:nth-child(1) {
+    display: none;
   }
 
   #snake-iframe {
