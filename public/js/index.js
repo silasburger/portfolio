@@ -27,9 +27,10 @@ $(function() {
 $(window)
   .scroll(function() {
     let scrollDistance = $(window).scrollTop();
+    let viewHeight = $(window).height();
     // Assign active class to nav links while scolling
     $('.main-section').each(function(i) {
-      if ($(this).position().top <= scrollDistance) {
+      if ($(this).position().top <= scrollDistance + (viewHeight / 2)) {
         $('.nav-link.active').removeClass('active');
         $('.nav-link')
           .eq(i)
@@ -37,14 +38,14 @@ $(window)
       }
     });
     $('#projects article').each(function(i) {
-      if (Math.round($(this).position().top) <= scrollDistance) {
+      if (Math.round($(this).position().top) <= scrollDistance + (viewHeight / 2)) {
         $('#navigation li a.active').removeClass('active');
         $('#navigation li a')
           .eq(i)
           .addClass('active');
       }
 
-      if($('#projects').position().top + $('#projects').height() <= scrollDistance || $('#projects').position().top >= scrollDistance) {
+      if($('#projects').position().top + $('#projects').height() <= scrollDistance + (viewHeight / 2) || $('#projects').position().top >= scrollDistance) {
         $('#navigation li a.active').removeClass('active');
       }
     });
