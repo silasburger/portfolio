@@ -1,4 +1,4 @@
-$(function() {
+$(window).on('load', function() {
   let $overlay = $('#overlay');
   let $body = $('body');
   $overlay.toggle();
@@ -24,6 +24,7 @@ $(function() {
       );
   });
 });
+
 $(window)
   .scroll(function() {
     let scrollDistance = $(window).scrollTop();

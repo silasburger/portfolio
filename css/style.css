@@ -201,11 +201,11 @@ header a {
   text-decoration: none;
 }
 
-li a.active {
+li > a.active {
   color: white;
 }
 
-li > a.active {
+li > a.active:hover {
   color: white;
 }
 
@@ -230,7 +230,8 @@ header > div > a {
   font-size: 1em;
 }
 
-.contact-info a {
+.contact-info a{
+  color: #bfbfbf;
   text-decoration: none;
 }
 
@@ -252,7 +253,7 @@ header > div > a {
 }
 
 .contact-info i {
-  color: #797979;
+  color: #bfbfbf;
   font-size: 0.85em;
 }
 
@@ -358,7 +359,7 @@ About Me CSS
 #about-me img {
   border-radius: 50%;
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
   border: solid 5px #4285F4;
 }
