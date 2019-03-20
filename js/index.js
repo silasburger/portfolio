@@ -4,6 +4,8 @@ $(window).on('load', function() {
   $overlay.toggle();
   $body.toggleClass('no-scroll');
 
+  AOS.init();
+
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
 
