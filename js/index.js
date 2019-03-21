@@ -38,6 +38,11 @@ $(window)
         $('.nav-link')
           .eq(i)
           .addClass('active');
+
+        $('.mobile-nav-link.active').removeClass('active');
+        $('.mobile-nav-link')
+          .eq(i)
+          .addClass('active');
       }
     });
     $('#projects article').each(function(i) {
