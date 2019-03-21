@@ -391,6 +391,12 @@ Mobile CSS
   .imgs-container > img:nth-child(1) {
     display: none;
   }
+  header {
+    width: 200px;
+  }
+  .main-section {
+    margin-left: 200px;
+  }
 }
 
 @media only screen and (max-width: 875px) {
@@ -428,10 +434,6 @@ Mobile CSS
     margin-top: 2rem;
   }
 
-  #contact-me > .main-section-header {
-    font-size: 40px;
-  }
-
   #burger-img {
     width: 30%;
   }
@@ -456,6 +458,7 @@ Mobile CSS
   .main-section {
     margin: 0;
     padding: 20px;
+    border-right: 0;
   }
 
   #projects > article, #about-me, #contact-me {
@@ -470,13 +473,17 @@ Mobile CSS
     justify-content: space-around;
   }
 
-  .top-nav a {
+  .mobile-nav-link {
     line-height: 30px;
     text-decoration: none;
     height: 30px;
     width: 50%;
     text-align: center;
     color: white;
+    background-color: gray;
+  }
+  
+  .mobile-nav-link.active {
     background-color: #4285F4;
   }
 
