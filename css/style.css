@@ -408,11 +408,7 @@ Mobile CSS
 
 @media only screen and (max-width: 650px) {
   header {
-    position: static;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: 30px 0 10px 0;
+    display: none;
   }
 
   #projects > article {
