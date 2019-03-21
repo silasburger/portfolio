@@ -53,15 +53,11 @@ header {
 .main-section {
   margin-left: 300px;
   border-top: solid 12px #131d27;
+  border-right: solid 12px #131d27;
 }
 
 footer.main-section {
   border-top: none;
-}
-
-.main-section-header {
-  font-size: 50px;
-  text-align: center;
 }
 
 #projects > article {
@@ -91,11 +87,12 @@ article > h1 {
 }
 
 article {
-  background-color: #fffff0;
+  background-color: #cdedf1;
   color: #131d27;
 }
 
 footer {
+  padding: 25px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -107,15 +104,6 @@ footer {
 Project CSS 
 ####################
 */
-
-#projects {
-  padding-top: 50px;
-}
-
-#projects > h1 {
-  padding-left: 50px;
-  padding-top: 50px;
-}
 
 .project-title, .project-title a {
   margin-top: 0;
@@ -140,7 +128,7 @@ Project CSS
 
 .project-links a {
   line-height: 2em;
-  margin-left: 20px;
+  margin-left: 1em;
   text-align: center;
   vertical-align: middle;
   border-radius: 100%;
@@ -149,8 +137,7 @@ Project CSS
   background-color: #4285F4;
   float: right;
   font-size: 20px;
-  color: #131d27;
-  transition: background-color 0.3s ease-in-out;
+  color: white;
 }
 
 .project-summary {
@@ -364,6 +351,7 @@ About Me CSS
   max-width: 200px;
   height: auto;
   border: solid 5px #4285F4;
+  margin-bottom: 1.75em;
 }
 
 #about-me p, #contact-me p {
@@ -371,31 +359,11 @@ About Me CSS
   font-weight: bold;
 }
 
-#floating-arrow {
-  text-align: center;
-  position: relative;
-  height: 50px;
-}
-
-.fa-angle-double-down {
-  font-size: 3em;
-  position: absolute;
-  transform: translate(-50%);
-  animation: float 10s infinite;
-}
-
-@keyframes float {
-  90% {
-    top: 0px;
-  }
-
-  97% {
-    top: 20px;
-  }
-
-  100% {
-    top: 0px;
-  }
+#about-me #intro-text {
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+  color: #4285F4;
+  margin-top: 7px;
 }
 
 /* 
@@ -411,6 +379,7 @@ Contact Me CSS
 
 blockquote {
   font-weight: bolder;
+  color: #4285F4;
 }
 
 /* 
@@ -418,6 +387,18 @@ blockquote {
 Mobile CSS 
 ####################
 */
+@media only screen and (max-width: 1015px) {
+  .imgs-container > img:nth-child(1) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  #about-me .project-links {
+    display:none;
+  }
+}
+
 
 @media only screen and (max-width: 650px) {
   header {
@@ -438,15 +419,13 @@ Mobile CSS
     border-top: none;
   }
 
-  #about-me .project-links {
-    float: none;
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
 
   #about-me .project-links a {
     margin: 0;
+  }
+
+  #about-me #intro-text {
+    margin-top: 2rem;
   }
 
   #contact-me > .main-section-header {
@@ -504,10 +483,6 @@ Mobile CSS
   .top-nav a:nth-child(2) {
     border-right: solid 3px #131d27;
     border-left: solid 3px #131d27;
-  }
-
-  .imgs-container > img:nth-child(1) {
-    display: none;
   }
 
   #snake-iframe {
