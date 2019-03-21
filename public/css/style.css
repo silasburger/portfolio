@@ -392,17 +392,17 @@ Mobile CSS
   .imgs-container > img:nth-child(1) {
     display: none;
   }
-  header {
-    width: 200px;
-  }
-  .main-section {
-    margin-left: 200px;
-  }
 }
 
 @media only screen and (max-width: 875px) {
   #about-me .project-links {
     display: none;
+  }
+  header {
+    width: 200px;
+  }
+  .main-section {
+    margin-left: 200px;
   }
 }
 
