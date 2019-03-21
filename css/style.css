@@ -379,8 +379,11 @@ Contact Me CSS
 }
 
 blockquote {
+  font-size: 1.5em;
   font-weight: bolder;
   color: #4285f4;
+  margin-left: 1rem;
+  margin-right: 0;
 }
 
 /* 
@@ -415,11 +418,6 @@ Mobile CSS
     padding: 50px 0 50px 0;
   }
 
-  #about-me {
-    padding: 50px 20px 50px 20px;
-    border-top: none;
-  }
-
   #about-me .project-links a {
     margin: 0;
   }
@@ -448,10 +446,20 @@ Mobile CSS
     padding-top: 0;
   }
 
+  #about-me {
+    padding: 80px 20px 50px 20px;
+    border-top: none;
+  }
+
   .main-section {
     margin: 0;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-right: 0;
+  }
+
+  #contact-me {
+    padding: 20px;
   }
 
   #projects > article,
@@ -465,6 +473,7 @@ Mobile CSS
     display: flex;
     width: 100%;
     justify-content: space-around;
+    z-index: 10;
   }
 
   .mobile-nav-link {
