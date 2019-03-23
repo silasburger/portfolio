@@ -10,11 +10,12 @@ Layout CSS
 
 body {
   background-color: #131d27;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
   color: #bfbfbf;
 }
 
 header {
+  font-family: 'Roboto', 'Muli', sans-serif;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -118,7 +119,6 @@ Project CSS
 
 .project-description,
 #about-me p {
-  font-family: 'Muli', sans-serif;
   line-height: 25px;
 }
 
@@ -140,15 +140,12 @@ Project CSS
   color: white;
 }
 
-.project-summary {
-  font-family: 'Roboto', sans-serif;
-}
-
 .imgs-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .imgs-container > img {
   max-height: 361px;
   max-width: 300px;
@@ -163,7 +160,6 @@ Sidenav CSS
 */
 
 header h1 {
-  font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 2.3em;
   margin-top: 0;
@@ -172,7 +168,6 @@ header h1 {
 
 #name-highlight {
   color:#4285f4;
-  font-family:'Roboto', sans-serif;
 }
 
 .nav-link {
@@ -357,7 +352,6 @@ About Me CSS
 #about-me p,
 #contact-me p {
   font-size: 1.2em;
-  font-weight: bold;
 }
 
 #about-me #intro-text {
