@@ -354,7 +354,8 @@ About Me CSS
   font-size: 1.2em;
 }
 
-#about-me #intro-text {
+#intro-text {
+  font-weight: bold;
   font-size: 2.5em;
   margin-bottom: 2rem;
   color: #4285f4;
