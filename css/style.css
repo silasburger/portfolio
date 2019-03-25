@@ -372,7 +372,7 @@ Contact Me CSS
 
 #contact-me {
   justify-content: flex-start;
-  line-height: 1.75em;
+  line-height: 25px;
 }
 
 blockquote {
