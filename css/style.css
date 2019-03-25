@@ -361,7 +361,7 @@ About Me CSS
   color: #4285f4;
   margin-top: 7px;
   display: inline-block;
-  width: 75%;
+  width: 60%;
 }
 
 /* 
@@ -391,6 +391,9 @@ Mobile CSS
 @media only screen and (max-width: 1015px) {
   .imgs-container > img:nth-child(1) {
     display: none;
+  }
+  #about-me #intro-text {
+    width: 48%;
   }
 }
 
