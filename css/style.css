@@ -4,6 +4,45 @@
 
 /* 
 ####################
+Utility selectors
+####################
+*/
+
+.dark-blue {
+  background-color: #131d27;
+}
+
+.light-blue {
+  background-color: #cdedf1;
+}
+
+.h25 {
+  height: 25px;
+}
+
+.h50 {
+  height: 50px;
+}
+
+.h75 {
+  height: 75px;
+}
+
+.h150 {
+  height: 150px
+}
+
+.h100 {
+  height: 100px
+}
+
+.bt12 {
+  border-top: 12px solid #131d27;;
+}
+
+
+/* 
+####################
 Layout CSS 
 ####################
 */
@@ -20,7 +59,7 @@ header {
   flex-direction: column;
   position: fixed;
   justify-content: center;
-  width: 300px;
+  width: 220px;
   height: 100%;
   float: left;
   text-align: center;
@@ -52,8 +91,7 @@ header {
 }
 
 .main-section {
-  margin-left: 300px;
-  border-top: solid 12px #131d27;
+  margin-left: 220px;
   border-right: solid 12px #131d27;
 }
 
@@ -61,16 +99,16 @@ footer.main-section {
   border-top: none;
 }
 
-#projects > article {
-  border-bottom: dashed 2px #131d27;
+.experience-section > article {
+  border-bottom: dashed 3px #131d27;
   padding: 50px;
 }
 
-#projects > article:last-child {
+.experience-section > article:last-child {
   border-bottom: none;
 }
 
-#projects > article > img {
+.experience-section > article > img {
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -86,7 +124,7 @@ article > h1 {
   display: inline-block;
 }
 
-article {
+article, section {
   background-color: #cdedf1;
   color: #131d27;
 }
@@ -101,9 +139,63 @@ footer {
 
 /* 
 ####################
+SVG Divders
+####################
+*/
+
+.wave-divider {
+  background-color: #131d27;
+  position: relative;
+}
+
+.wave-bottom {
+  bottom: 0;
+  background-color: #cdedf1;
+}
+
+.wave-bottom .shape-fill {
+  fill: #131d27;
+}
+
+.wave-bottom svg {
+  width: calc(100% + 1.3px);
+}
+
+.wave-top {
+  background-color: #131d27;
+  top: 0;
+}
+
+.wave-top svg {
+  width: calc(100% + 1.3px);
+}
+
+.wave-top .shape-fill {
+  fill: #cdedf1;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+}
+
+/* 
+####################
 Project CSS 
 ####################
 */
+
+.project-summary {
+  text-transform: uppercase;
+}
 
 .project-title,
 .project-title a {
@@ -119,6 +211,7 @@ Project CSS
 
 .project-description,
 #about-me p {
+  overflow-wrap:break-word;
   line-height: 25px;
 }
 
@@ -172,10 +265,11 @@ header h1 {
 
 .nav-link {
   font-size: 1.4em;
-  color: gray;
+  color: #bfbfbf;
 }
 
 .nav-link.active {
+  font-weight: bold;
   color: white;
 }
 
@@ -188,20 +282,22 @@ li > a.active {
 }
 
 li > a.active:hover {
+  font-weight: bold;
   color: white;
 }
 
 a {
-  color: gray;
+  color: #bfbfbf;
 }
 
 li > a {
-  color: gray;
+  color: #bfbfbf;
 }
 
 header a:hover {
   text-decoration: none;
-  color: #bfbfbf;
+  color: white;
+  font-weight: bold;
 }
 
 header > div > a {
@@ -219,11 +315,17 @@ header > div > a {
 
 #navigation {
   margin: 20px;
+  text-align: left;
 }
 
 #navigation ul {
   list-style: none;
   padding-left: 0;
+}
+
+#navigation li {
+  padding-left: 1em;
+  white-space: nowrap;
 }
 
 .contact-info div {
@@ -336,11 +438,15 @@ About Me CSS
   flex-direction: column;
 }
 
+#contact-me blockquote a {
+  color: blue;
+}
+
 #about-me {
   justify-content: flex-start;
 }
 
-#about-me img {
+#contact-me img {
   border-radius: 50%;
   width: 100%;
   max-width: 200px;
@@ -357,7 +463,7 @@ About Me CSS
 #about-me #intro-text {
   font-weight: bold;
   font-size: 2.5em;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #4285f4;
   margin-top: 7px;
   display: inline-block;
@@ -373,6 +479,11 @@ Contact Me CSS
 #contact-me {
   justify-content: flex-start;
   line-height: 25px;
+}
+
+.contact-img-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 blockquote {
@@ -410,6 +521,9 @@ Mobile CSS
   .main-section {
     margin-left: 200px;
   }
+  #navigation li {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -417,7 +531,7 @@ Mobile CSS
     display: none;
   }
 
-  #projects > article {
+  .experience-section > article {
     padding: 50px 0 50px 0;
   }
 
@@ -426,7 +540,7 @@ Mobile CSS
   }
 
   #about-me #intro-text {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   #burger-img {
@@ -450,22 +564,22 @@ Mobile CSS
   }
 
   #about-me {
-    padding: 80px 20px 50px 20px;
+    padding: 50px 15px 50px 15px;
     border-top: none;
   }
 
   .main-section {
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-right: 0;
   }
 
   #contact-me {
-    padding: 20px;
+    padding: 15px;
   }
 
-  #projects > article,
+  .experience-section > article,
   #about-me,
   #contact-me {
     height: auto;
@@ -480,9 +594,9 @@ Mobile CSS
   }
 
   .mobile-nav-link {
-    line-height: 30px;
+    line-height: 22px;
     text-decoration: none;
-    height: 30px;
+    height: 22px;
     width: 50%;
     text-align: center;
     color: white;
@@ -496,6 +610,10 @@ Mobile CSS
   .top-nav a:nth-child(2) {
     border-right: solid 3px #131d27;
     border-left: solid 3px #131d27;
+  }
+
+  .top-nav a:nth-child(3) {
+    border-right: solid 3px #131d27;
   }
 }
 
