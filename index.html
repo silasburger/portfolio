@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto|Muli"
+      href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,800"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
@@ -26,9 +26,9 @@
         <div class="loader">Loading...</div>
       </div>
       <div class="top-nav">
-        <a class="mobile-nav-link about-me-link" href="#about-me">About</a>
+        <a class="mobile-nav-link about-me-link" href="#about-me">Intro</a>
         <a class="mobile-nav-link" href="#work-experience">Experience</a>
-        <a class="mobile-nav-link" href="#projects">Projects</a>
+        <a class="mobile-nav-link" href="#projects">Fun</a>
         <a class="mobile-nav-link contact-link" href="#contact-me">Contact</a>
       </div>
       <div class="content">
@@ -57,13 +57,11 @@
               <ul>
                 <div>
                   <a href="#projects" class="nav-link">
-                    Projects
+                    Fun
                   </a>
                 </div>
-                <li><a href="#microblog">Microblog</a></li>
-                <li><a href="#jobly">Jobly</a></li>
+                <li><a href="#wg-gesucht-updater">WG Gesucht Updater</a></li>
                 <li><a href="#react-snake">React Snake</a></li>
-                <li><a href="#warbler">Warbler</a></li>
               </ul>
               <div>
                 <a href="#contact-me" class="nav-link contact-link">
@@ -73,8 +71,23 @@
             </div>
           </div>
         </header>
+        <div class="wave-divider main-section h100">
+          <div class="wave wave-bottom flip">
+            <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" fill="#cdedf1"></path>
+              <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" fill="#cdedf1"></path>
+              <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                fill="#cdedf1"></path>
+            </svg>
+          </div>
+        </div>
         <main>
-          <section class="main-section bt12" id="about-me">
+          <section class="main-section" id="about-me">
             <div>
               <div class="project-links">
                 <a href="https://medium.com/@silasburger" target="_blank"
@@ -94,6 +107,8 @@
                 ></a>
 
               </div>
+              <div class="col-wrap">
+                <div class="text-col">
               <p
                 data-aos="zoom-in-down"
                 data-aos-easing="ease-out-cubic"
@@ -103,16 +118,24 @@
               >
                 Hi there
               </p>
-              <p>
-                Bioasdfjlldksaf;slkjdflakjsdf;ljasl;dfjla;sjdflaksjfdljasdlfkjalsdjflasdfj
-                l;askjdfl;ajksdf;lkajsldfjal;sdjflasjdfljas;dfljas;ldjfk;alskjdf;lajsdfl;jas;ldfja;jsf
-                la;ksjdfl;aksjdf;lajsdfl;jasldfjal;sjkdf;alsdjf;lasjkdf;lajsd;lfjal;sdjkf;ajklsdfjfdsaajs
-                ;lasjfdjklfsadjkdafsadfls;adfs;ffdkjsa;adfjksfdkas;ajkfdsjkfds;jadfs;jdfsakl;dfsal;afds;jlfdasl;dfsaljkfdsajk
-                kjlfdsajklfadsadfjksjkadfsadfs;jfjkdfsadfs;jad;jadfs;jadfs;;jadflsadfls;dfs;jadfs;j;dfsfadsj;
-              </p>
-              <p>
-                Checkout some of my projects below!
-              </p>
+                  <p>
+                    We rely on modern technologies whether it is <b><a>talking business</a></b> 
+                    outside the office, operating an <b><a>retail business online</a></b>, or searching 
+                    for an <b><a>alternative education</a></b> to persue a passion.
+                  </p>
+                  <p>
+                    I am thrilled to have a career in a stimulating field at a such pivotal time.
+                  </p>
+                </div>
+              </div>
+              <div class="company-logo-links">
+                <p class="project-summary">Engineering and Analytics</p>
+                <div>
+                  <a id="ooma-link" class="ooma-red" href="#ooma"><img src="assets/ooma.svg" alt="Ooma"></a>
+                  <a id="cr-link" href="#course-report"><img src="assets/CR_Logo_Circle.webp" alt="Course Report"></a>
+                  <a id="ec-link" class="cr-gray" href="#exclusive-concepts"><img src="assets/EC_LOGO_1.svg" alt="Exclusive Concepts"></a>
+                </div>
+              </div>
             </div>
           </section>
           <div class="wave-divider main-section h100">
@@ -121,7 +144,7 @@
                 <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
               </svg>
             </div>
-            <div class="wave wave-bottom">
+            <div class="wave wave-bottom ooma-red">
               <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
               </svg>
@@ -129,30 +152,40 @@
           </div>
           <section class="main-section experience-section" id="work-experience">
             <article id="ooma">
-              <h1 class="project-title">Ooma</h1>
-              <div class="project-summary">Engineering, React</div>
-              <p class="project-description">
-                Some text about ooma office manager
-              </p>
-                <img src="assets/oom.webp" data-aos="fade-up" data-aos-anchor-placement="center-bottom"/>
+              <img src="assets/oom.webp"/>
+              <div class="text-col">
+                <h1 class="project-title">Ooma</h1>
+                <div class="project-summary">Engineering, Web</div>
+                <p class="project-blurb">
+                  From 2019 to 2021, I worked on Ooma's web product, Ooma Office. Ooma provides modern business communication services.
+                </p>
+                <p class="project-description">
+                  Ooma Office is a cloud-based phone system that consists of conferencing, virtual fax, video meeting, call recording, 
+                  call blocking, and voicemail transcription applications. My team developed a robust web app with React and Ruby on Rails 
+                  for managing Ooma Office configurations as well as providing video calling with WebRTC. I worked on the frontend in a 
+                  Jack-of-all-trades role where I implemented Ooma Office Pro upgrade UI, Virtual Fax features, and software rebranding for
+                  partners companies and corporations.
+
+                </p>
+              </div>
             </article>
 
             <article id="course-report">
-              <h1 class="project-title">Course Report</h1>
-              <div class="project-summary">Engineering, React Native</div>
-              <p class="project-description">
-                As part of my internship at Course Report I helped build an MVP
-                mobile app that allows users to read blog articles and
-                view/contact schools. The project leveraged an Express proxy
-                server to periodically retrieve school and blog data from the core
-                rails server, store it in a redis cache, and serve it to the
-                mobile app using RESTful standards. The app features
-                auto-pagination while scrolling, fuzzy search, and sort by
-                location.
-              </p>
+              <div class="text-col">
+                <h1 class="project-title">Course Report</h1>
+                <div class="project-summary">Engineering, React Native</div>
+                <p class="project-blurb">In 2018, I interned at Course Report, a site for finding and evaluating coding bootcamps, to gain engineering experience</p>
+                <p class="project-description">
+                  I helped build an MVP mobile app that allows users to read blog articles and
+                  view/contact schools. The project leveraged an Express proxy
+                  server to periodically retrieve school and blog data from the core
+                  rails server, store it in a redis cache, and serve it to the
+                  mobile app using RESTful standards. The app features
+                  auto-pagination while scrolling, fuzzy search, and sort by
+                  location.
+                </p>
+              </div>
               <div
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
                 class="imgs-container"
               >
                 <img src="assets/phone2-compressor.png" />
@@ -161,20 +194,20 @@
             </article>
 
             <article id="exclusive-concepts">
-              <h1 class="project-title">Exclusive Concepts</h1>
-              <div class="project-summary">Ecommerce Analytics</div>
-              <p class="project-description">
-                Testing Specialist, Exclusive Concepts | Burlington, MA 2016 - 2018
-                Exclusive Concepts is a marketing agency focused on driving business for ecommerce companies
-                ● Designed A/B tests for ecommerce stores based on Google Analytics data and user behavior
-                ● Monitored performance for the duration of each test, including when each reached statistical significance
-                ● Winning tests boosted sitewide conversion rates by ~15%
-                ● Created test development processes for smaller projects to increase efficiency by removing the need to
-                outsource work to a foreign development team
-                ● Coded test solutions on an A/B testing platform using jQuery
-                Some text about exclusive concepts
-              </p>
-                <img src="assets/joma_shop.png" data-aos="fade-up" data-aos-anchor-placement="center-bottom"/>
+              <img src="assets/joma_shop.png" />
+              <div class="text-col">
+                <h1 class="project-title">Exclusive Concepts</h1>
+                <div class="project-summary">Ecommerce Analytics</div>
+                <p class="project-blurb">
+                  From 2016 to 2018, I worked at Exclusive Concepts, an ecommerce marketing agency. 
+                </p>
+                <p class="project-description">
+                  I worked with several ecommerce clients of varying sizes. I specialized in site behavior and Google Analytics 
+                  data providing consultation to clients. I worked closely with a development team to design, implement, and monitored 
+                  mulitvariat and A/B tests aimed at boosting conversion rate at statistical significance. We encountered numerous 
+                  winning tests that raised rates anywhere from 5 - 15%. I also developed tests using jQuery and vanilla JS for dom manipulation.
+                </p>
+              </div>
             </article>
 
           </section>
@@ -183,11 +216,11 @@
               <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path
                   d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                  class="shape-fill">
+                  fill="#0E8144">
                 </path>
               </svg>
             </div>
-            <div class="wave wave-bottom">
+            <div class="wave wave-bottom light-blue">
               <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path
                   d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
@@ -197,75 +230,27 @@
             </div>
           </div>
           <section class="main-section experience-section" id="projects">
-            <article id="microblog">
+            <article id="wg-gesucht-updater">
               <h1 class="project-title">
-                <a
-                  href="https://microblogly-frontend.herokuapp.com/"
-                  target="_blank"
-                  >Microblog</a
-                >
+                  WG Gesucht Updater
               </h1>
               <div class="project-links">
                 <a
-                  href="https://microblogly-frontend.herokuapp.com/"
+                  href="https://github.com/silasburger/wg-gesucht-updater"
                   target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="https://github.com/silasburger/microblog" target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
               </div>
-              <div class="project-summary">Blog App Frontend</div>
+              <div class="project-summary">WG Search Tool, Python</div>
               <p class="project-description">
-                I built the frontend using Redux, React, and Bootstrap. Users can
-                write, edit, comment, and vote. Posts are ranked on the frontpage
-                of the site. The primary focus of this project was to design a
-                hierarchy that connects components to Redux in a strategic and
-                thoughtful manner. An interesting part of this project was using
-                combineReducers to separate reducer logic so we could match
-                reducers with associated containers.
+                I fixed a script I found for logging in and pinging
+                an ad on the WG Gesucht website to keep it on the first 
+                page. I added dockerfile to run the script in a container.
               </p>
-              <img
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                src="assets/microblog-compressor.png"
-                alt="microblog-photo"
-              />
-            </article>
-            <article id="jobly">
-              <h1 class="project-title">
-                <a href="https://joblyyy-front.herokuapp.com/" target="_blank"
-                  >Jobly</a
-                >
-              </h1>
-              <div class="project-links">
-                <a href="https://joblyyy-front.herokuapp.com/" target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="https://github.com/silasburger/jobly" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-              <div class="project-summary">Job Search App</div>
-              <p class="project-description">
-                The site features authentication and search functionality so that
-                users can login and easily find jobs that they're interested in.
-                When users apply for jobs the status of their application is
-                remembered upon logout. I built the backend using Express and the
-                frontend using React.
-              </p>
-              <img
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                src="assets/jobly-compressor.png"
-                alt="jobly-photo"
-              />
             </article>
             <article id="react-snake">
               <h1 class="project-title">
-                <a href="https://react-snakely.netlify.com" target="_blank"
-                  >React Snake</a
-                >
+                  React Snake
               </h1>
               <div class="project-links">
                 <a href="https://react-snakely.netlify.com" target="_blank"
@@ -277,15 +262,13 @@
                   ><i class="fab fa-github"></i
                 ></a>
               </div>
-              <div class="project-summary">Classic Snake Built in React</div>
+              <div class="project-summary">Snake Built with React</div>
               <p class="project-description">
                 I exercised my knowledge of the React lifecycle to build my take
                 on the classic arcade game. Click on the game and use the arrow
                 keys to give it a whirl. The snake gets faster as it grows!
               </p>
               <iframe
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
                 id="snake-iframe"
                 src="https://react-snakely.netlify.com/"
                 scrolling="no"
@@ -295,35 +278,6 @@
                 problems that I had to overcome. For example, elements with
                 duplicate keys dropping from the virtual DOM.
               </p>
-            </article>
-            <article id="warbler">
-              <h1 class="project-title">
-                <a href="https://warblarblarg.herokuapp.com/" target="_blank"
-                  >Warbler</a
-                >
-              </h1>
-              <div class="project-links">
-                <a href="https://warblarblarg.herokuapp.com/" target="_blank"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="https://github.com/silasburger/warbler" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-              <div class="project-summary">Twitter Clone</div>
-              <p class="project-description">
-                I built a server-side rendered Twitter clone in Flask. This
-                project taught me how to build a site with no frontend, relying on
-                server-side templating and HTML responses. Working with Flask, I
-                learned about auth patterns, the concept of a global user, and
-                sessions.
-              </p>
-              <img
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                src="assets/warbler-compressor.png"
-                alt="placeholder"
-              />
             </article>
           </section>
           <div class="wave-divider main-section h100">

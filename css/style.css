@@ -40,6 +40,10 @@ Utility selectors
   border-top: 12px solid #131d27;;
 }
 
+.flip {
+  transform: rotate(180deg)
+}
+
 
 /* 
 ####################
@@ -47,9 +51,10 @@ Layout CSS
 ####################
 */
 
+
 body {
   background-color: #131d27;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', 'Muli', sans-serif;
   color: #bfbfbf;
 }
 
@@ -85,6 +90,8 @@ header {
   overflow: hidden;
 }
 
+
+
 .content {
   margin: auto;
   max-width: 1500px;
@@ -101,10 +108,33 @@ footer.main-section {
 
 .experience-section > article {
   border-bottom: dashed 3px #131d27;
-  padding: 50px;
+  padding: 3rem;
 }
 
-.experience-section > article:last-child {
+#work-experience > article {
+  border-bottom: solid 10px #131d27;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#work-experience > article > img {
+  max-width: 50vw;
+  margin: 3em;
+}
+
+#work-experience > article .text-col, #about-me .text-col {
+  width: 45vw;
+}
+
+.col-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.experience-section > article:last-child, #work-experience > article:last-child {
   border-bottom: none;
 }
 
@@ -150,7 +180,6 @@ SVG Divders
 
 .wave-bottom {
   bottom: 0;
-  background-color: #cdedf1;
 }
 
 .wave-bottom .shape-fill {
@@ -187,32 +216,66 @@ SVG Divders
   display: block;
 }
 
+
 /* 
 ####################
-Project CSS 
+Articles
 ####################
 */
 
+.ooma-red, #ooma {
+  background-color: #cf3339;
+}
+
+.cr-gray, #course-report {
+  background-color: #444;
+}
+
+.eci-green, #exclusive-concepts {
+  background-color: #0E8144;
+}
+
+#work-experience > article {
+  color: white;
+}
+
+.experience-section {
+  line-height: 1.5;
+}
+
+.project-blurb {
+  font-size: 35px;
+  padding: 20px;
+  margin: 0;
+}
+
 .project-summary {
+  font-size: 16px;
   text-transform: uppercase;
+  padding: 20px;
+  letter-spacing: 3px;
+  font-weight: 800;
 }
 
 .project-title,
 .project-title a {
-  margin-top: 0;
-  margin-bottom: 3px;
+  margin: 0;
   text-decoration: none;
-  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 20px
 }
 
 .project-description {
-  color: black;
+  margin: 0;
+  padding: 20px;
 }
 
 .project-description,
 #about-me p {
   overflow-wrap:break-word;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .project-links {
@@ -234,6 +297,8 @@ Project CSS
 }
 
 .imgs-container {
+  margin: 3em;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -257,6 +322,7 @@ header h1 {
   font-size: 2.3em;
   margin-top: 0;
   margin-bottom: 0;
+  letter-spacing: 3px;
 }
 
 #name-highlight {
@@ -438,10 +504,6 @@ About Me CSS
   flex-direction: column;
 }
 
-#contact-me blockquote a {
-  color: blue;
-}
-
 #about-me {
   justify-content: flex-start;
 }
@@ -470,6 +532,35 @@ About Me CSS
   width: 60%;
 }
 
+#cr-link > img {
+  max-height: 6rem;
+  height: 6rem;
+  width: 6rem;
+}
+
+.company-logo-links a img {
+  max-height: 4rem;
+  width: 4rem;
+}
+
+.company-logo-links > p {
+  text-align: center;
+}
+
+.company-logo-links > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.company-logo-links a {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 /* 
 ####################
 Contact Me CSS 
@@ -489,9 +580,12 @@ Contact Me CSS
 blockquote {
   font-size: 1.5em;
   font-weight: bolder;
-  color: #4285f4;
   margin-left: 1rem;
   margin-right: 0;
+}
+
+#contact-me blockquote a {
+  color: #4285f4;
 }
 
 /* 
@@ -532,7 +626,7 @@ Mobile CSS
   }
 
   .experience-section > article {
-    padding: 50px 0 50px 0;
+    padding: 3rem 0 3rem 0;
   }
 
   #about-me .project-links a {
