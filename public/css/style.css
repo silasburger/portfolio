@@ -12,6 +12,10 @@ Utility selectors
   background-color: #131d27;
 }
 
+.gray {
+  background-color: #444;
+}
+
 .light-blue {
   background-color: #cdedf1;
 }
@@ -228,11 +232,19 @@ Articles
 }
 
 .cr-gray, #course-report {
-  background-color: #444;
+  background-color: #4198b5;
 }
 
 .eci-green, #exclusive-concepts {
-  background-color: #0E8144;
+  background-color: #0e8144;
+}
+
+.eci-color {
+  color: #0e8144;
+}
+
+.cr-color {
+  color: #09a3d6;
 }
 
 #work-experience > article {
@@ -379,6 +391,10 @@ header > div > a {
   text-decoration: none;
 }
 
+#about-me a {
+  text-decoration: none;
+}
+
 #navigation {
   margin: 20px;
   text-align: left;
@@ -504,6 +520,10 @@ About Me CSS
   flex-direction: column;
 }
 
+#about-me .project-summary {
+  color: #131d27;
+}
+
 #about-me {
   justify-content: flex-start;
 }
@@ -530,6 +550,10 @@ About Me CSS
   margin-top: 7px;
   display: inline-block;
   width: 60%;
+}
+
+.ooma-color {
+  color: #cf3339;
 }
 
 #cr-link > img {
