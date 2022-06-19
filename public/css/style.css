@@ -33,21 +33,36 @@ Utility selectors
 }
 
 .h150 {
-  height: 150px
+  height: 150px;
+}
+
+.h200 {
+  height: 200px;
+}
+
+.h10 {
+  height: 10rem;
+}
+
+.h15 {
+  height: 15rem;
+}
+
+.h8 {
+  height: 8rem;
 }
 
 .h100 {
-  height: 100px
+  height: 100px;
 }
 
 .bt12 {
-  border-top: 12px solid #131d27;;
+  border-top: 12px solid #131d27;
 }
 
 .flip {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
-
 
 /* 
 ####################
@@ -55,11 +70,9 @@ Layout CSS
 ####################
 */
 
-
 body {
   background-color: #131d27;
   font-family: 'Montserrat', 'Muli', sans-serif;
-  color: #bfbfbf;
 }
 
 header {
@@ -94,8 +107,6 @@ header {
   overflow: hidden;
 }
 
-
-
 .content {
   margin: auto;
   max-width: 1500px;
@@ -115,6 +126,12 @@ footer.main-section {
   padding: 3rem;
 }
 
+.experience-section > article,
+#about-me,
+#contact-me {
+  padding: 3rem;
+}
+
 #work-experience > article {
   border-bottom: solid 10px #131d27;
   display: flex;
@@ -122,13 +139,13 @@ footer.main-section {
   align-items: center;
 }
 
-#work-experience > article > img {
-  max-width: 50vw;
-  margin: 3em;
+#work-experience article .text-col > img {
+  max-width: 100%;
+  margin: 3em 0;
 }
 
-#work-experience > article .text-col, #about-me .text-col {
-  width: 45vw;
+.text-col {
+  width: 35rem;
 }
 
 .col-wrap {
@@ -137,8 +154,29 @@ footer.main-section {
   justify-content: center;
 }
 
+.project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
 
-.experience-section > article:last-child, #work-experience > article:last-child {
+.project-title-row > .project-title {
+  margin-right: 1rem;
+  padding: 0;
+}
+
+.project-title-row > .project-links {
+  white-space: nowrap;
+}
+
+.project-title-row > .project-title {
+  flex-grow: 1;
+}
+
+.experience-section > article:last-child,
+#work-experience > article:last-child {
   border-bottom: none;
 }
 
@@ -158,7 +196,8 @@ article > h1 {
   display: inline-block;
 }
 
-article, section {
+article,
+section {
   background-color: #cdedf1;
   color: #131d27;
 }
@@ -220,22 +259,24 @@ SVG Divders
   display: block;
 }
 
-
 /* 
 ####################
 Articles
 ####################
 */
 
-.ooma-red, #ooma {
+.ooma-red,
+#ooma {
   background-color: #cf3339;
 }
 
-.cr-gray, #course-report {
+.cr-gray,
+#course-report {
   background-color: #4198b5;
 }
 
-.eci-green, #exclusive-concepts {
+.eci-green,
+#exclusive-concepts {
   background-color: #0e8144;
 }
 
@@ -255,16 +296,22 @@ Articles
   line-height: 1.5;
 }
 
+.project-blurb,
+.project-description,
+.project-title,
+.project-title a,
+.project-summary {
+  padding: 1rem 0;
+}
+
 .project-blurb {
   font-size: 35px;
-  padding: 20px;
   margin: 0;
 }
 
 .project-summary {
   font-size: 16px;
   text-transform: uppercase;
-  padding: 20px;
   letter-spacing: 3px;
   font-weight: 800;
 }
@@ -275,37 +322,31 @@ Articles
   text-decoration: none;
   font-size: 50px;
   font-weight: 700;
-  padding: 20px
 }
 
 .project-description {
   margin: 0;
-  padding: 20px;
 }
 
 .project-description,
 #about-me p {
-  overflow-wrap:break-word;
+  overflow-wrap: break-word;
   font-size: 20px;
   line-height: 1.5;
 }
 
-.project-links {
-  float: right;
-}
-
 .project-links a {
   line-height: 2em;
-  margin-left: 1em;
+  margin-right: 1rem;
   text-align: center;
   vertical-align: middle;
   border-radius: 100%;
   width: 2em;
   height: 2em;
   background-color: #4285f4;
-  float: right;
   font-size: 20px;
   color: white;
+  display: inline-block;
 }
 
 .imgs-container {
@@ -338,7 +379,7 @@ header h1 {
 }
 
 #name-highlight {
-  color:#4285f4;
+  color: #4285f4;
 }
 
 .nav-link {
@@ -427,7 +468,7 @@ header > div > a {
   margin: 0 auto;
   display: block;
   background-color: white;
-  border: none;  
+  border: none;
   min-width: 350px;
   min-height: 350px;
   box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.51);
@@ -458,6 +499,7 @@ Loader CSS
   -webkit-animation: load7 1.8s infinite ease-in-out;
   animation: load7 1.8s infinite ease-in-out;
 }
+
 .loader {
   color: #ffffff;
   position: absolute;
@@ -470,36 +512,43 @@ Loader CSS
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+
 .loader:before,
 .loader:after {
   content: '';
   position: absolute;
   top: 0;
 }
+
 .loader:before {
   left: -3.5em;
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
+
 .loader:after {
   left: 3.5em;
 }
+
 @-webkit-keyframes load7 {
   0%,
   80%,
   100% {
     box-shadow: 0 2.5em 0 -1.3em;
   }
+
   40% {
     box-shadow: 0 2.5em 0 0;
   }
 }
+
 @keyframes load7 {
   0%,
   80%,
   100% {
     box-shadow: 0 2.5em 0 -1.3em;
   }
+
   40% {
     box-shadow: 0 2.5em 0 0;
   }
@@ -515,14 +564,13 @@ About Me CSS
 #contact-me {
   text-align: left;
   color: black;
-  padding: 50px;
   display: flex;
   flex-direction: column;
 }
 
-#about-me .project-summary {
-  color: #131d27;
-}
+/* #about-me .project-summary { */
+/* color: #131d27; */
+/* } */
 
 #about-me {
   justify-content: flex-start;
@@ -549,7 +597,10 @@ About Me CSS
   color: #4285f4;
   margin-top: 7px;
   display: inline-block;
-  width: 60%;
+}
+
+#intro-text > a {
+  color: #4285f4;
 }
 
 .ooma-color {
@@ -582,7 +633,7 @@ About Me CSS
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 /* 
@@ -621,80 +672,76 @@ Mobile CSS
   .imgs-container > img:nth-child(1) {
     display: none;
   }
-  #about-me #intro-text {
-    width: 48%;
-  }
 }
 
 @media only screen and (max-width: 875px) {
-  #about-me .project-links {
-    display: none;
-  }
-  #about-me #intro-text {
-    width: 100%;
-  }
   header {
-    width: 200px;
-  }
-  .main-section {
-    margin-left: 200px;
-  }
-  #navigation li {
     display: none;
+  }
+
+  .project-links {
+    margin-right: 1rem;
+  }
+
+  .main-section {
+    margin: 0;
+    border-left: solid 12px #131d27;
+  }
+
+  /* #about-me .project-links {
+    display: none;
+  } */
+
+  .top-nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 10;
+  }
+
+  .mobile-nav-link {
+    line-height: 22px;
+    text-decoration: none;
+    height: 22px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    background-color: gray;
+  }
+
+  .mobile-nav-link.active {
+    background-color: #4285f4;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  header {
-    display: none;
+  .company-logo-links a {
+    height: 5rem;
+    width: 5rem;
   }
-
+  #cr-link img {
+    height: 5rem;
+    width: 5rem;
+  }
   .experience-section > article {
-    padding: 3rem 0 3rem 0;
+    border-bottom: dashed 3px #131d27;
+    padding: 1rem;
   }
 
-  #about-me .project-links a {
-    margin: 0;
-  }
-
-  #about-me #intro-text {
-    margin-top: 1rem;
-  }
-
-  #burger-img {
-    width: 30%;
-  }
-
-  header > h1 {
-    margin-top: 20px;
-  }
-
-  header > div > a {
-    display: none;
-  }
-
-  #navigation {
-    display: none;
-  }
-
-  .content {
-    padding-top: 0;
-  }
-
-  #about-me {
-    padding: 50px 15px 50px 15px;
-    border-top: none;
+  .experience-section > article,
+  #about-me,
+  #contact-me {
+    padding: 1rem;
   }
 
   .main-section {
     margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-right: 0;
+    border: none;
   }
 
-  #contact-me {
-    padding: 15px;
+  .project-links {
+    margin-right: 1rem;
   }
 
   .experience-section > article,
@@ -723,15 +770,6 @@ Mobile CSS
 
   .mobile-nav-link.active {
     background-color: #4285f4;
-  }
-
-  .top-nav a:nth-child(2) {
-    border-right: solid 3px #131d27;
-    border-left: solid 3px #131d27;
-  }
-
-  .top-nav a:nth-child(3) {
-    border-right: solid 3px #131d27;
   }
 }
 
