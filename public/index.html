@@ -1,318 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Silas Burger</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="/css/normalize.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,800" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <title>Silas Burger</title>
-</head>
-
-<body class="no-scroll">
-  <div class="wrapper">
-    <div id="overlay">
-      <div class="loader">Loading...</div>
-    </div>
-    <div class="top-nav">
-      <a class="mobile-nav-link about-me-link" href="#about-me">About</a>
-      <a class="mobile-nav-link" href="#work-experience">Experience</a>
-      <a class="mobile-nav-link" href="#projects">Projects</a>
-      <a class="mobile-nav-link contact-link" href="#contact-me">Contact</a>
-    </div>
-    <div class="content">
-      <header>
-        <div class="burger-img-container">
-          <img id="burger-img" src="assets/burger-compressor.png" />
-        </div>
-        <h1 id="full-name">S<span id="name-highlight">Burger</span></h1>
-        <div id="navigation">
-          <div>
-            <a href="#about-me" class="nav-link about-me-link">About</a>
-          </div>
-          <ul>
-            <div>
-              <a href="#work-experience" class="nav-link"> Experience </a>
-            </div>
-            <li><a href="#ooma">Ooma</a></li>
-            <li><a href="#course-report">Course Report</a></li>
-            <li><a href="#exclusive-concepts">Exclusive Concepts</a></li>
-          </ul>
-          <ul>
-            <div>
-              <a href="#projects" class="nav-link">Projects</a>
-            </div>
-            <li><a href="#wg-gesucht-updater">WG Gesucht Updater</a></li>
-            <li><a href="#react-snake">React Snake</a></li>
-          </ul>
-          <div>
-            <a href="#contact-me" class="nav-link contact-link"> Contact </a>
-          </div>
-        </div>
-      </header>
-      <div class="wave-divider main-section h8">
-        <div class="wave wave-bottom flip">
-          <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-            preserveAspectRatio="none">
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25" fill="#cdedf1"></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5" fill="#cdedf1"></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              fill="#cdedf1"></path>
-          </svg>
-        </div>
+  <body class="no-scroll">
+    <div class="wrapper">
+      <div id="overlay">
+        <div class="loader">Loading...</div>
       </div>
-      <main>
-        <section class="main-section" id="about-me">
-          <div class="col-wrap">
-            <div class="text-col">
-              <p data-aos="zoom-in-down" data-aos-easing="ease-out-cubic" data-aos-once data-aos-delay="300"
-                id="intro-text">
-                Hi, I'm Silas Burger
-              </p>
-              <div class="project-links">
-                <a href="https://medium.com/@silasburger" target="_blank"><i class="fab fa-medium"></i></a>
-                <a href="https://github.com/silasburger/" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/silasburger/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="/assets/Resume-Silas-Burger.pdf" target="_blank"><i class="far fa-file-pdf"></i></a>
-                <a href="mailto:silas.a.burger@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-              </div>
-              <p>
-                We rely on modern technologies every day, whether it is calling into
-                <b><a href="#ooma" class="ooma-color">meetings from home,</a></b>
-                operating a
-                <b><a class="eci-color" href="#exclusive-concepts">retail business online,</a></b>
-                or searching for an
-                <b><a href="#course-report" class="cr-color">alternative education.</a></b>
-              </p>
-              <p>
-                I am thrilled to have a career in a stimulating field at such a pivotal time.
-              </p>
-            </div>
-          </div>
-          <div class="company-logo-links" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-            data-aos-delay="300" data-aos-once="true">
-            <p class="project-summary">Engineering and Analytics</p>
-            <div>
-              <a id="ooma-link" class="ooma-red" href="#ooma"><img src="assets/ooma.svg" alt="Ooma" /></a>
-              <a id="cr-link" href="#course-report"><img src="assets/CR_Logo_Circle.webp" alt="Course Report" /></a>
-              <a id="ec-link" class="gray" href="#exclusive-concepts"><img src="assets/EC_LOGO_1.svg"
-                  alt="Exclusive Concepts" /></a>
-            </div>
-          </div>
-        </section>
-        <div class="wave-divider main-section h100">
-          <div class="wave wave-top">
-            <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-              preserveAspectRatio="none">
-              <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-            </svg>
-          </div>
-          <div class="wave wave-bottom ooma-red">
-            <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-              preserveAspectRatio="none">
-              <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-            </svg>
-          </div>
-        </div>
-        <section class="main-section experience-section" id="work-experience">
-          <article id="ooma">
-            <div class="col-wrap">
-              <div class="text-col">
-                <img src="assets/oom.webp" />
-                <h1 class="project-title">Ooma</h1>
-                <div class="project-summary">Engineering, Web</div>
-                <p class="project-blurb">
-                  From 2019 to 2021, I worked on Ooma's web product.
-                </p>
-                <p class="project-description">
-                  Ooma Office is a cloud-based phone system that consists of
-                  conferencing, phone, and fax applications. My team developed a robust web app
-                  with React and Ruby on Rails for managing Ooma Office configurations and using
-                  virtual fax, video meeting, and call recording services. I worked
-                  on the frontend in a Jack-of-all-trades role where I implemented Ooma Office Pro UI,
-                  virtual fax features, and reskinning for Ooma partners.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article id="course-report">
-            <div class="col-wrap">
-              <div class="text-col">
-                <h1 class="project-title">Course Report</h1>
-                <div class="project-summary">Engineering, React Native</div>
-                <p class="project-blurb">
-                  In 2018, I interned at Course Report.
-                </p>
-                <p class="project-description">
-                  Coure Report is a site for finding and evaluating coding bootcamps.
-                  I helped build an MVP mobile app that allows users to read
-                  blog articles view schools, and directly contact the staff.
-                  The app features auto-pagination while scrolling, fuzzy search, and
-                  sort by location.
-                </p>
-              </div>
-            </div>
-            <div class="imgs-container">
-              <img src="assets/phone2-compressor.png" />
-              <img src="assets/phone1-compressor.png" />
-            </div>
-          </article>
-
-          <article id="exclusive-concepts">
-            <div class="col-wrap">
-              <div class="text-col">
-                <img src="assets/heatmap.webp" />
-                <h1 class="project-title">Exclusive Concepts</h1>
-                <div class="project-summary">Ecommerce Analytics</div>
-                <p class="project-blurb">
-                  From 2016 to 2018, I worked at an ecommerce marketing agency.
-                </p>
-                <p class="project-description">
-                  I specialized in site behavior and analytics to help clients boost
-                  profit with data driven decisions. My direct clients included large ecommerce
-                  companies such as Jomashop and elf Cosmetics. I led our
-                  development and design teams to design, implement, and monitor
-                  mulitvariate and A/B tests aimed at boosting conversion rate
-                  at statistical significance. We encountered numerous winning
-                  tests that raised rates anywhere from 5 - 15%. I also
-                  developed tests using jQuery and vanilla JS for dom
-                  manipulation.
-                </p>
-              </div>
-            </div>
-          </article>
-        </section>
-        <div class="wave-divider main-section h100">
-          <div class="wave wave-top">
-            <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-              preserveAspectRatio="none">
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                fill="#0E8144"></path>
-            </svg>
-          </div>
-          <div class="wave wave-bottom light-blue">
-            <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-              preserveAspectRatio="none">
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                class="shape-fill"></path>
-            </svg>
-          </div>
-        </div>
-        <section class="main-section experience-section" id="projects">
-          <article id="wg-gesucht-updater">
-            <div class="project-title-row">
-              <h1 class="project-title">WG Gesucht Updater</h1>
-              <div class="project-links">
-                <a href="https://github.com/silasburger/wg-gesucht-updater" target="_blank"><i
-                    class="fab fa-github"></i></a>
-              </div>
-            </div>
-
-            <div class="project-summary">WG Search Tool, Python</div>
-            <p class="project-description">
-              I adapted a script I found to log in and ping an ad on a 
-              site, WG Gesucht, to maintain a position on the first page of
-              the chronological search results. I containerized the script using docker.
-            </p>
-          </article>
-          <article id="react-snake">
-            <div class="project-title-row">
-              <h1 class="project-title">React Snake</h1>
-              <div class="project-links">
-                <a href="https://react-snakely.netlify.com" target="_blank"><i class="fas fa-link"></i></a>
-                <a href="https://github.com/silasburger/react-snake" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <div class="project-summary">Snake Built with React</div>
-            <p class="project-description">
-              I exercised my knowledge of the React lifecycle to build my take
-              on the classic arcade game. Click on the game and use the arrow
-              keys to give it a whirl. The snake gets faster as it grows!
-            </p>
-            <iframe id="snake-iframe" src="https://react-snakely.netlify.com/" scrolling="no"></iframe>
-            <p class="project-description">
-              While making the game I ran into a number of React specific
-              problems that I had to overcome. For example, elements with
-              duplicate keys dropping from the virtual DOM.
-            </p>
-          </article>
-        </section>
-        <div class="wave-divider main-section h100">
-          <div class="wave wave-top">
-            <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-              preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-            </svg>
-          </div>
-          <div class="wave wave-bottom">
-            <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-              preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-            </svg>
-          </div>
-        </div>
-        <section class="main-section" id="contact-me">
-          <div class="contact-img-wrapper">
-            <img src="/assets/silas-burger.jpg" alt="Silas Burger" />
-          </div>
-          <p>
-            I'm currently seeking new opportunities. The best way to get in
-            touch is to send me an email:
-          </p>
-          <blockquote>
-            <a href="mailto:silas.a.burger@gmail.com" target="_blank">silas.a.burger@gmail.com</a>
-          </blockquote>
-          <p>Feel free to checkout my resume, Github, Linkedin, or Medium.</p>
-        </section>
-      </main>
-      <div class="wave-divider main-section h50">
-        <div class="wave wave-top">
-          <svg class="h50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-            preserveAspectRatio="none">
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25" class="shape-fill"></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5" class="shape-fill"></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              class="shape-fill"></path>
-          </svg>
-        </div>
+      <div class="top-nav">
+        <a class="mobile-nav-link about-me-link" href="#about-me">About</a>
+        <a class="mobile-nav-link" href="#work-experience">Experience</a>
+        <a class="mobile-nav-link" href="#projects">Projects</a>
+        <a class="mobile-nav-link contact-link" href="#contact-me">Contact</a>
       </div>
-      <footer class="main-section">
-        <div class="contact-info">
-          <div>
-            <a href="/assets/Resume-Silas-Burger.pdf" target="_blank"><i class="far fa-file-pdf"></i> Resume</a>
-            <a href="https://github.com/silasburger" target="_blank"><i class="fab fa-github"></i> Github</a>
+      <div class="content">
+        <header>
+          <div class="burger-img-container">
+            <img id="burger-img" src="assets/burger-compressor.png" />
           </div>
-          <div>
-            <a href="https://www.linkedin.com/in/silasburger/" target="_blank"><i class="fab fa-linkedin-in"></i>
-              Linkedin</a>
-            <a href="https://medium.com/@silasburger" target="_blank"><i class="fab fa-medium"></i> Medium</a>
+          <h1 id="full-name">S<span id="name-highlight">Burger</span></h1>
+          <div id="navigation">
+            <div>
+              <a href="#about-me" class="nav-link about-me-link">About</a>
+            </div>
+            <ul>
+              <div>
+                <a href="#work-experience" class="nav-link"> Experience </a>
+              </div>
+              <li><a href="#ooma">Ooma</a></li>
+              <li><a href="#course-report">Course Report</a></li>
+              <li><a href="#exclusive-concepts">Exclusive Concepts</a></li>
+            </ul>
+            <ul>
+              <div>
+                <a href="#projects" class="nav-link">Projects</a>
+              </div>
+              <li><a href="#wg-gesucht-updater">WG Gesucht Updater</a></li>
+              <li><a href="#react-snake">React Snake</a></li>
+            </ul>
+            <div>
+              <a href="#contact-me" class="nav-link contact-link"> Contact </a>
+            </div>
+          </div>
+        </header>
+        <div class="wave-divider main-section h8">
+          <div class="wave wave-bottom flip">
+            <svg
+              class="h50"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25"
+                fill="#cdedf1"
+              ></path>
+              <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5"
+                fill="#cdedf1"
+              ></path>
+              <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                fill="#cdedf1"
+              ></path>
+            </svg>
           </div>
         </div>
-      </footer>
+        <main>
+          <section class="main-section" id="about-me">
+            <div class="col-wrap">
+              <div class="text-col">
+                <p
+                  data-aos="zoom-in-down"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once
+                  data-aos-delay="300"
+                  id="intro-text"
+                >
+                  Hi, I'm Silas Burger
+                </p>
+                <div class="project-links">
+                  <a href="https://medium.com/@silasburger" target="_blank"
+                    ><i class="fab fa-medium"></i
+                  ></a>
+                  <a href="https://github.com/silasburger/" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://linkedin.com/in/silasburger/" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="/assets/Resume-Silas-Burger.pdf" target="_blank"
+                    ><i class="far fa-file-pdf"></i
+                  ></a>
+                  <a href="mailto:silas.a.burger@gmail.com" target="_blank"
+                    ><i class="far fa-envelope"></i
+                  ></a>
+                </div>
+                <p>
+                  We rely on modern technologies every day, whether it is
+                  calling into
+                  <b
+                    ><a href="#ooma" class="ooma-color"
+                      >meetings from home,</a
+                    ></b
+                  >
+                  operating a
+                  <b
+                    ><a class="eci-color" href="#exclusive-concepts"
+                      >retail business online,</a
+                    ></b
+                  >
+                  or searching for an
+                  <b
+                    ><a href="#course-report" class="cr-color"
+                      >alternative education.</a
+                    ></b
+                  >
+                </p>
+                <p>
+                  I am thrilled to have a career in a stimulating field at such
+                  a pivotal time.
+                </p>
+              </div>
+            </div>
+            <div
+              class="company-logo-links"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-delay="300"
+              data-aos-once="true"
+            >
+              <p class="project-summary">Engineering and Analytics</p>
+              <div>
+                <a id="ooma-link" class="ooma-red" href="#ooma"
+                  ><img src="assets/ooma.svg" alt="Ooma"
+                /></a>
+                <a id="cr-link" href="#course-report"
+                  ><img src="assets/CR_Logo_Circle.webp" alt="Course Report"
+                /></a>
+                <a id="ec-link" class="gray" href="#exclusive-concepts"
+                  ><img src="assets/EC_LOGO_1.svg" alt="Exclusive Concepts"
+                /></a>
+              </div>
+            </div>
+          </section>
+          <div class="wave-divider main-section h100">
+            <div class="wave wave-top">
+              <svg
+                class="h50"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M1200 0L0 0 598.97 114.72 1200 0z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+            <div class="wave wave-bottom ooma-red">
+              <svg
+                class="h50"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M1200 0L0 0 598.97 114.72 1200 0z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <section class="main-section experience-section" id="work-experience">
+            <article id="ooma">
+              <div class="col-wrap">
+                <div class="text-col">
+                  <img src="assets/oom.webp" />
+                  <h1 class="project-title">Ooma</h1>
+                  <div class="project-summary">Engineering, Web</div>
+                  <p class="project-blurb">
+                    From 2019 to 2021, I worked on Ooma's web product.
+                  </p>
+                  <p class="project-description">
+                    Ooma Office is a cloud-based phone system that consists of
+                    conferencing, phone, and fax applications. My team developed
+                    a robust web app with React and Ruby on Rails for managing
+                    Ooma Office configurations and using virtual fax, video
+                    meeting, and call recording services. I worked on the
+                    frontend in a Jack-of-all-trades role where I implemented
+                    Ooma Office Pro UI, virtual fax features, and reskinning for
+                    Ooma partners.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article id="course-report">
+              <div class="col-wrap">
+                <div class="text-col">
+                  <h1 class="project-title">Course Report</h1>
+                  <div class="project-summary">Engineering, React Native</div>
+                  <p class="project-blurb">
+                    In 2018, I interned at Course Report.
+                  </p>
+                  <p class="project-description">
+                    Coure Report is a site for finding and evaluating coding
+                    bootcamps. I helped build an MVP mobile app that allows
+                    users to read blog articles view schools, and directly
+                    contact the staff. The app features auto-pagination while
+                    scrolling, fuzzy search, and sort by location.
+                  </p>
+                </div>
+              </div>
+              <div class="imgs-container">
+                <img src="assets/phone2-compressor.png" />
+                <img src="assets/phone1-compressor.png" />
+              </div>
+            </article>
+
+            <article id="exclusive-concepts">
+              <div class="col-wrap">
+                <div class="text-col">
+                  <img src="assets/heatmap.webp" />
+                  <h1 class="project-title">Exclusive Concepts</h1>
+                  <div class="project-summary">Ecommerce Analytics</div>
+                  <p class="project-blurb">
+                    From 2016 to 2018, I worked at an ecommerce marketing
+                    agency.
+                  </p>
+                  <p class="project-description">
+                    I specialized in site behavior and analytics to help clients
+                    boost profit with data driven decisions. My direct clients
+                    included large ecommerce companies such as Jomashop and elf
+                    Cosmetics. I led our development and design teams to design,
+                    implement, and monitor mulitvariate and A/B tests aimed at
+                    boosting conversion rate at statistical significance. We
+                    encountered numerous winning tests that raised rates
+                    anywhere from 5 - 15%. I also developed tests using jQuery
+                    and vanilla JS for dom manipulation.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </section>
+          <div class="wave-divider main-section h100">
+            <div class="wave wave-top">
+              <svg
+                class="h50"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  fill="#0E8144"
+                ></path>
+              </svg>
+            </div>
+            <div class="wave wave-bottom light-blue">
+              <svg
+                class="h50"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <section class="main-section experience-section" id="projects">
+            <article id="happy-hiit-timer">
+              <div class="project-title-row">
+                <h1 class="project-title">Happy HIIT Timer</h1>
+                <div class="project-links">
+                  <a
+                    href="https://famous-hamster-32c83a.netlify.app/"
+                    target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a
+                    href="https://github.com/silasburger/happy-hiit-timer"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="project-summary">Workout Timer, React</div>
+              <p class="project-description">
+                I created a timer for high intensity interval training, or HIIT
+                for short. You can add exercises and customize the timer to best
+                achieve your fitness goals. Local browser storage remembers your
+                settings for the next session.
+              </p>
+            </article>
+            <article id="wg-gesucht-updater">
+              <div class="project-title-row">
+                <h1 class="project-title">WG Gesucht Updater</h1>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/silasburger/wg-gesucht-updater"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="project-summary">WG Search Tool, Python</div>
+              <p class="project-description">
+                I adapted a script I found to log in and ping an ad on a site,
+                WG Gesucht, to maintain a position on the first page of the
+                chronological search results. I containerized the script using
+                docker.
+              </p>
+            </article>
+            <article id="react-snake">
+              <div class="project-title-row">
+                <h1 class="project-title">React Snake</h1>
+                <div class="project-links">
+                  <a href="https://react-snakely.netlify.com" target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                  <a
+                    href="https://github.com/silasburger/react-snake"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="project-summary">Snake Built with React</div>
+              <p class="project-description">
+                I exercised my knowledge of the React lifecycle to build my take
+                on the classic arcade game. Click on the game and use the arrow
+                keys to give it a whirl. The snake gets faster as it grows!
+              </p>
+              <iframe
+                id="snake-iframe"
+                src="https://react-snakely.netlify.com/"
+                scrolling="no"
+              ></iframe>
+              <p class="project-description">
+                While making the game I ran into a number of React specific
+                problems that I had to overcome. For example, elements with
+                duplicate keys dropping from the virtual DOM.
+              </p>
+            </article>
+          </section>
+          <div class="wave-divider main-section h100">
+            <div class="wave wave-top">
+              <svg
+                class="h50"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+            <div class="wave wave-bottom">
+              <svg
+                class="h50"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <section class="main-section" id="contact-me">
+            <div class="contact-img-wrapper">
+              <img src="/assets/silas-burger.jpg" alt="Silas Burger" />
+            </div>
+            <p>
+              I'm currently seeking new opportunities. The best way to get in
+              touch is to send me an email:
+            </p>
+            <blockquote>
+              <a href="mailto:silas.a.burger@gmail.com" target="_blank"
+                >silas.a.burger@gmail.com</a
+              >
+            </blockquote>
+            <p>Feel free to checkout my resume, Github, Linkedin, or Medium.</p>
+          </section>
+        </main>
+        <div class="wave-divider main-section h50">
+          <div class="wave wave-top">
+            <svg
+              class="h50"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25"
+                class="shape-fill"
+              ></path>
+              <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5"
+                class="shape-fill"
+              ></path>
+              <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <footer class="main-section">
+          <div class="contact-info">
+            <div>
+              <a href="/assets/Resume-Silas-Burger.pdf" target="_blank"
+                ><i class="far fa-file-pdf"></i> Resume</a
+              >
+              <a href="https://github.com/silasburger" target="_blank"
+                ><i class="fab fa-github"></i> Github</a
+              >
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/silasburger/" target="_blank"
+                ><i class="fab fa-linkedin-in"></i> Linkedin</a
+              >
+              <a href="https://medium.com/@silasburger" target="_blank"
+                ><i class="fab fa-medium"></i> Medium</a
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/index.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
