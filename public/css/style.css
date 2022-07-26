@@ -563,7 +563,7 @@ About Me CSS
 #about-me,
 #contact-me {
   text-align: left;
-  color: black;
+  color: #131d27;
   display: flex;
   flex-direction: column;
 }
