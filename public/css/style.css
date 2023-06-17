@@ -280,6 +280,11 @@ Articles
   background-color: #0e8144;
 }
 
+#work-experience > #charles, .charles-yellow {
+  background-color: #FFF171;
+  color: #131d27;
+}
+
 .eci-color {
   color: #0e8144;
 }
