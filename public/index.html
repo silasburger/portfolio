@@ -11,8 +11,10 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,800"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -95,21 +97,12 @@
           <section class="main-section" id="about-me">
             <div class="col-wrap">
               <div class="text-col">
-                <p
-                  data-aos="zoom-in-up"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once
-                  data-aos-delay="300"
-                  id="intro-text"
-                >
-                  Hi, I'm Silas!
-                </p>
                 <div class="mobile-about-img">
                   <img src="assets/silas-burger.jpg" alt="Silas Burger" />
                 </div>
-                <div class="about-img-wrapper">
-                  <img src="assets/silas-burger.jpg" alt="Silas Burger" />
-                  <div>
+                <div class="about-wrapper">
+                  <div class="about-img-col">
+                    <img src="assets/silas-burger.jpg" alt="Silas Burger" />
                     <div class="project-links">
                       <a href="assets/Resume-Silas-Burger.pdf" target="_blank"
                         ><i class="far fa-file-pdf"></i
@@ -129,23 +122,36 @@
                         ><i class="far fa-envelope"></i
                       ></a>
                     </div>
+                  </div>
+                  <div>
+                    <p
+                      data-aos="zoom-in-right"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-once
+                      data-aos-delay="300"
+                      id="intro-text"
+                    >
+                      Hi, I'm Silas!
+                    </p>
+
                     <p>
-                      I am thrilled to have a career in a stimulating field at
-                      such a pivotal time! As a software engineer, I get to turn
-                      ideas into reality, solve tricky problems, and build cool
-                      things with code. Whether it's crafting sleek front-end
-                      experiences, designing rock-solid backend systems, or
-                      diving into the latest tech, I love the challenge and
-                      creativity that comes with it.
+                      I am a software engineer interested in using tech to solve
+                      real world problems.
+                    </p>
+                    <p>
+                      Below you can see my past work experience as well as a few
+                      projects that I have worked on.
+                    </p>
+                    <p>
+                      I am actively looking for a job right now, so feel free to
+                      reach out with opportunities .
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="company-logo-links"
-            >
-              <p class="project-summary">Software Engineering Journey</p>
+            <div class="company-logo-links">
+              <p class="project-summary">My Career Journey</p>
               <div>
                 <a id="charles-link" href="#charles" class="charles-yellow"
                   ><img src="assets/typie-black.png" alt="Charles"
@@ -243,14 +249,16 @@
                 <div class="text-col">
                   <img src="assets/journeys.jpg" />
                   <h1 class="project-title">Charles</h1>
-                  <div class="project-summary">Software Engineer</div>
+                  <p>
+                    <span class="project-summary"> Software Engineer </span>
+                    <i>Sep 2022 – Jul 2024</i>
+                  </p>
                   <p class="project-description">
-                    At Charles I primarily focused on building and enhancing the
-                    Journeys tool, which automates WhatsApp conversation flows
-                    and marketing campaigns. A key feature I'm particularly
-                    proud of is the Condition Node, which enables users to
-                    segment customers based on specific criteria, helping brands
-                    target users based on engagement or potential value.
+                    At Charles I primarily focused on building out a tool that
+                    automates WhatsApp conversation flows and marketing
+                    campaigns. With conditional logic it allows users to segment
+                    customers based on specific criteria, helping brands target
+                    users based on engagement or potential value.
                   </p>
                 </div>
               </div>
@@ -261,7 +269,10 @@
                 <div class="text-col">
                   <img src="assets/oom.webp" />
                   <h1 class="project-title">Ooma</h1>
-                  <div class="project-summary">Software Engineer</div>
+                  <p>
+                    <span class="project-summary"> Software Engineer </span>
+                    <i>Aug 2019 – Oct 2021</i>
+                  </p>
                   <p class="project-description">
                     Ooma Office is a cloud-based phone system that consists of
                     conferencing, phone, and fax applications. My team developed
@@ -280,7 +291,10 @@
               <div class="col-wrap">
                 <div class="text-col">
                   <h1 class="project-title">Course Report</h1>
-                  <div class="project-summary">Software Engineer Intern</div>
+                  <p>
+                    <span class="project-summary">Software Engineer Intern</span>
+                    <i>Nov 2018</i>
+                  </p>
                   <p class="project-description">
                     Coure Report is a site for finding and evaluating coding
                     bootcamps. I helped build an MVP mobile app that allows
@@ -301,7 +315,10 @@
                 <div class="text-col">
                   <img src="assets/heatmap.webp" />
                   <h1 class="project-title">Exclusive Concepts</h1>
-                  <div class="project-summary">Ecommerce Analyst</div>
+                  <p>
+                    <span class="project-summary"> Ecommerce Analyst </span>
+                    <i>Jun 2016 – Mar 2018</i>
+                  </p>
                   <p class="project-description">
                     I specialized in site behavior and analytics to help clients
                     boost profit with data driven decisions. My direct clients
@@ -467,11 +484,6 @@
                     src="https://react-snakely.netlify.app/"
                     scrolling="no"
                   ></iframe>
-                  <p class="project-description">
-                    While making the game I ran into a number of React specific
-                    problems that I had to overcome. For example, elements with
-                    duplicate keys dropping from the virtual DOM.
-                  </p>
                 </div>
               </div>
             </article>
