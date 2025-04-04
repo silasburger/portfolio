@@ -8,10 +8,6 @@ Utility selectors
 ####################
 */
 
-.dark-blue {
-  background-color: #131d27;
-}
-
 .gray {
   background-color: #444;
 }
@@ -28,36 +24,8 @@ Utility selectors
   height: 50px;
 }
 
-.h75 {
-  height: 75px;
-}
-
-.h150 {
-  height: 150px;
-}
-
-.h200 {
-  height: 200px;
-}
-
-.h10 {
-  height: 10rem;
-}
-
-.h15 {
-  height: 15rem;
-}
-
 .h8 {
   height: 8rem;
-}
-
-.h100 {
-  height: 100px;
-}
-
-.bt12 {
-  border-top: 12px solid #131d27;
 }
 
 .flip {
