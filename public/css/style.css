@@ -145,7 +145,7 @@ footer.main-section {
 }
 
 .text-col {
-  width: 35rem;
+  width: 45rem;
 }
 
 .col-wrap {
@@ -265,24 +265,20 @@ Articles
 ####################
 */
 
-.ooma-red,
-#ooma {
+.ooma-red {
   background-color: #cf3339;
 }
 
-.cr-gray,
-#course-report {
+.cr-gray {
   background-color: #4198b5;
 }
 
-.eci-green,
-#exclusive-concepts {
+.eci-green {
   background-color: #0e8144;
 }
 
-#work-experience > #charles, .charles-yellow {
+.charles-yellow {
   background-color: #FFF171;
-  color: #131d27;
 }
 
 .eci-color {
@@ -291,10 +287,6 @@ Articles
 
 .cr-color {
   color: #09a3d6;
-}
-
-#work-experience > article {
-  color: white;
 }
 
 .experience-section {
