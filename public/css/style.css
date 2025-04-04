@@ -593,6 +593,9 @@ About Me
   max-width: 200px;
   min-width: 200px;
   border: solid 5px #4285f4;
+}
+
+.mobile-about-img {
   display: none;
 }
 
@@ -665,7 +668,7 @@ About Me
   align-items: center;
 }
 
-.about-img-col .project-links a:last-child {
+#about-me .project-links a:last-child {
   margin-right: 0px;
 }
 
@@ -745,12 +748,16 @@ Mobile CSS
     background-color: #4285f4;
   }
 
-  .about-wrapper img {
+  .about-wrapper .about-img-col {
     display: none;
   }
 
-  #about-me .mobile-about-img>img {
+  #about-me .mobile-about-img {
     display: block;
+    text-align: center;
+  }
+  #about-me #intro-text {
+    text-align: center;
   }
 }
 
@@ -814,9 +821,8 @@ Mobile CSS
     display: none;
   }
 
-  .company-logo-links > div {
-    gap: 0.5em;
-    flex-wrap: wrap;
+  .company-logo-links {
+    display: none;
   }
 
 }
