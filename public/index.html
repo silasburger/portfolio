@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Silas Burger</title>
   </head>
 
@@ -55,6 +55,7 @@
               <div>
                 <a href="#projects" class="nav-link">Projects</a>
               </div>
+              <li><a href="#window-restore">Window Restore</a></li>
               <li><a href="#happy-hiit-timer">Happy HIIT Timer</a></li>
               <li><a href="#wg-gesucht-updater">WG Gesucht Updater</a></li>
               <li><a href="#react-snake">React Snake</a></li>
@@ -104,8 +105,8 @@
                   Hi, I'm Silas Burger
                 </p>
                 <div class="project-links">
-                  <a href="https://medium.com/@silasburger" target="_blank"
-                    ><i class="fab fa-medium"></i
+                  <a href="assets/Resume-Silas-Burger.pdf" target="_blank"
+                    ><i class="far fa-file-pdf"></i
                   ></a>
                   <a href="https://github.com/silasburger/" target="_blank"
                     ><i class="fab fa-github"></i
@@ -113,8 +114,8 @@
                   <a href="https://linkedin.com/in/silasburger/" target="_blank"
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
-                  <a href="assets/Resume-Silas-Burger.pdf" target="_blank"
-                    ><i class="far fa-file-pdf"></i
+                  <a href="https://medium.com/@silasburger" target="_blank"
+                    ><i class="fab fa-medium"></i
                   ></a>
                   <a href="mailto:silas.a.burger@gmail.com" target="_blank"
                     ><i class="far fa-envelope"></i
@@ -154,7 +155,7 @@
               data-aos-delay="300"
               data-aos-once="true"
             >
-              <p class="project-summary">Engineering and Analytics</p>
+              <p class="project-summary">Software Engineering Journey</p>
               <div>
                 <a id="charles-link" href="#charles" class="charles-yellow"
                   ><img src="assets/typie-black.png" alt="Charles"
@@ -208,20 +209,13 @@
                   <img src="assets/journeys.jpg" />
                   <h1 class="project-title">Charles</h1>
                   <div class="project-summary">Engineering, Web</div>
-                  <p class="project-blurb">
-                    September, 2022, I started at Charles.
-                  </p>
                   <p class="project-description">
-                    Charles is a SaaS company that provides tools for conversational 
-                    commerce, otherwise known as selling stuff over WhatsApp. The software 
-                    allows direct to consumer brands to manage marketing, sales, and customer 
-                    service operations by integrating with the WhatsApp API. I worked on 
-                    Journeys, the tool for automating WhatsApp conversation and marketing flows. 
-                    I contributed mainly to the frontend which uses an open canvas UI (Pixi.js), 
-                    Vue.js, and Typescript. A specific feature that I'm proud of is the condition 
-                    node, which allowed users to design flows that segment customers based on
-                    conditions. This node is useful for targeting customers that have shown past 
-                    engagement or value potential. 
+                    At Charles I primarily focused on building and enhancing the
+                    Journeys tool, which automates WhatsApp conversation flows
+                    and marketing campaigns. A key feature I'm particularly
+                    proud of is the Condition Node, which enables users to
+                    segment customers based on specific criteria, helping brands
+                    target users based on engagement or potential value.
                   </p>
                 </div>
               </div>
@@ -329,13 +323,36 @@
             </div>
           </div>
           <section class="main-section experience-section" id="projects">
+            <article id="window-restore">
+              <div class="project-title-row">
+                <h1 class="project-title">Window Restore</h1>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/silasburger/window-restore"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="project-summary">
+                Script for macOS via Hammerspoon, Lua
+              </div>
+              <p class="project-description">
+                I encountered an issue where macOS apps use different methods to
+                open their primary windows. My workflow involves switching apps,
+                opening a new window if needed, all via keyboard. However, I
+                found that each app had its own keystroke for opening a primary
+                window, or sometimes none at all. To avoid hunting for app icons
+                in the dock, I created a Lua script with Hammerspoon that opens
+                the primary window of any app with just three keystrokes.
+              </p>
+            </article>
             <article id="happy-hiit-timer">
               <div class="project-title-row">
                 <h1 class="project-title">Happy HIIT Timer</h1>
                 <div class="project-links">
-                  <a
-                    href="https://happy-hiit-timer.netlify.app"
-                    target="_blank"
+                  <a href="https://happy-hiit-timer.netlify.app" target="_blank"
                     ><i class="fas fa-link"></i
                   ></a>
                   <a
@@ -402,7 +419,7 @@
               <iframe
                 id="snake-iframe"
                 class="iframes"
-                src="https://react-snakely.netlify.com/"
+                src="https://react-snakely.netlify.app/"
                 scrolling="no"
               ></iframe>
               <p class="project-description">
