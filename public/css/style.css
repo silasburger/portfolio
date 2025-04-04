@@ -334,7 +334,8 @@ Articles
 
 .project-links a {
   line-height: 2em;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
   text-align: center;
   vertical-align: middle;
   border-radius: 100%;
@@ -400,10 +401,6 @@ li > a.active {
 li > a.active:hover {
   font-weight: bold;
   color: white;
-}
-
-a {
-  color: #bfbfbf;
 }
 
 li > a {
@@ -562,7 +559,7 @@ Loader CSS
 
 /* 
 ####################
-About Me CSS 
+About Me 
 ####################
 */
 
@@ -574,21 +571,36 @@ About Me CSS
   flex-direction: column;
 }
 
-/* #about-me .project-summary { */
-/* color: #131d27; */
-/* } */
-
 #about-me {
   justify-content: flex-start;
 }
 
-#contact-me img {
+#about-me .about-img-wrapper>img {
   border-radius: 50%;
   width: 100%;
-  max-width: 200px;
-  height: auto;
+  height: 280px;
+  max-width: 280px;
+  min-width: 280px;
   border: solid 5px #4285f4;
-  margin-bottom: 1.75em;
+  flex-shrink: 0;
+}
+
+#about-me .mobile-about-img>img {
+  border-radius: 50%;
+  width: 100%;
+  height: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  border: solid 5px #4285f4;
+  display: none;
+}
+
+
+.about-img-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
 }
 
 #about-me p,
@@ -614,8 +626,8 @@ About Me CSS
 
 #cr-link > img {
   max-height: 6rem;
-  height: 6rem;
-  width: 6rem;
+  min-width: 6rem;
+  min-height: 6rem;
 }
 
 .company-logo-links a img {
@@ -630,11 +642,18 @@ About Me CSS
 .company-logo-links > div {
   display: flex;
   justify-content: space-evenly;
+  max-width: 50em;
+  margin: 0 auto
+}
+
+.arrow-svg {
+  width: 2rem;
+  flex-shrink: 1;
 }
 
 .company-logo-links a {
-  height: 6rem;
-  width: 6rem;
+  min-width: 6rem;
+  min-height: 6rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -652,11 +671,6 @@ Contact Me CSS
   line-height: 25px;
 }
 
-.contact-img-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 blockquote {
   font-size: 1.5em;
   font-weight: bolder;
@@ -668,6 +682,13 @@ blockquote {
   color: #4285f4;
 }
 
+.contact-img-wrapper>img {
+  width: 75%;
+}
+
+#contact-me a {
+  color:#131d27;
+}
 /* 
 ####################
 Mobile CSS 
@@ -693,10 +714,6 @@ Mobile CSS
     border-left: solid 12px #131d27;
   }
 
-  /* #about-me .project-links {
-    display: none;
-  } */
-
   .top-nav {
     position: fixed;
     display: flex;
@@ -717,6 +734,14 @@ Mobile CSS
 
   .mobile-nav-link.active {
     background-color: #4285f4;
+  }
+
+  .about-img-wrapper>img {
+    display: none;
+  }
+
+  #about-me .mobile-about-img>img {
+    display: block;
   }
 }
 
@@ -775,6 +800,16 @@ Mobile CSS
   .mobile-nav-link.active {
     background-color: #4285f4;
   }
+
+  .arrow-svg {
+    display: none;
+  }
+
+  .company-logo-links > div {
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+
 }
 
 @media only screen and (max-width: 380px) {
