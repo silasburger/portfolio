@@ -191,7 +191,7 @@ SVG Divders
 }
 
 .wave-bottom {
-  bottom: 0;
+  bottom: -1px;
 }
 
 .wave-bottom .shape-fill {
@@ -204,7 +204,7 @@ SVG Divders
 
 .wave-top {
   background-color: #131d27;
-  top: 0;
+  top: -1px;
 }
 
 .wave-top svg {
