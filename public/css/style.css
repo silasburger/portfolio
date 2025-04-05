@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-bg: #131d27;
+  --nav-text: #bfbfbf;
+  --accent-blue: #4285f4;
+  --light-bg: #cdedf1;
+  --white: #ffffff;
+  --shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.51);
+}
+
 /* 
 ####################
 Utility selectors
@@ -13,7 +22,7 @@ Utility selectors
 }
 
 .light-blue {
-  background-color: #cdedf1;
+  background-color: var(--light-bg);
 }
 
 .h25 {
@@ -191,7 +200,7 @@ SVG Divders
 }
 
 .wave-bottom {
-  bottom: -1px;
+  bottom: -1px; 
 }
 
 .wave-bottom .shape-fill {
@@ -430,9 +439,9 @@ header > div > a {
 .iframes {
   margin: 0 auto;
   display: block;
-  background-color: white;
+  background-color: var(--white);
   border: none;
-  box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.51);
+  box-shadow: var(--shadow);
 }
 
 #snake-iframe {
@@ -443,7 +452,6 @@ header > div > a {
 #hiit-iframe {
   min-width: 350px;
   min-height: 400px;
-
 }
 
 #burger-img-container {
@@ -456,7 +464,7 @@ header > div > a {
 
 /* 
 ####################
-Loader CSS 
+Loader Animation
 ####################
 */
 
@@ -466,22 +474,17 @@ Loader CSS
   border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation: load7 1.8s infinite ease-in-out;
   animation: load7 1.8s infinite ease-in-out;
 }
 
 .loader {
-  color: #ffffff;
+  color: var(--white);
   position: absolute;
   top: 35%;
   left: 50%;
   text-indent: -9999em;
-  -webkit-transform: translateZ(0) translate(-50%, -50%);
-  -ms-transform: translateZ(0) translate(-50%, -50%);
   transform: translateZ(0) translate(-50%, -50%);
-  -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
 
@@ -494,24 +497,11 @@ Loader CSS
 
 .loader:before {
   left: -3.5em;
-  -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
 .loader:after {
   left: 3.5em;
-}
-
-@-webkit-keyframes load7 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 2.5em 0 -1.3em;
-  }
-
-  40% {
-    box-shadow: 0 2.5em 0 0;
-  }
 }
 
 @keyframes load7 {
@@ -520,7 +510,6 @@ Loader CSS
   100% {
     box-shadow: 0 2.5em 0 -1.3em;
   }
-
   40% {
     box-shadow: 0 2.5em 0 0;
   }
@@ -671,9 +660,10 @@ blockquote {
 }
 /* 
 ####################
-Mobile CSS 
+Media Queries
 ####################
 */
+
 @media only screen and (max-width: 1015px) {
   .imgs-container > img:nth-child(1) {
     display: none;
@@ -685,13 +675,9 @@ Mobile CSS
     display: none;
   }
 
-  .project-links {
-    margin-right: 1rem;
-  }
-
   .main-section {
     margin: 0;
-    border-left: solid 12px #131d27;
+    border-left: solid 12px var(--primary-bg);
   }
 
   .top-nav {
@@ -708,12 +694,12 @@ Mobile CSS
     height: 22px;
     width: 50%;
     text-align: center;
-    color: white;
+    color: var(--white);
     background-color: gray;
   }
 
   .mobile-nav-link.active {
-    background-color: #4285f4;
+    background-color: var(--accent-blue);
   }
 
   .about-wrapper .about-img-col {
@@ -724,28 +710,24 @@ Mobile CSS
     display: block;
     text-align: center;
   }
+
   #about-me #intro-text {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .company-logo-links a {
-    height: 5rem;
-    width: 5rem;
-  }
+  .company-logo-links a,
   #cr-link img {
     height: 5rem;
     width: 5rem;
-  }
-  .experience-section > article {
-    padding: 1rem;
   }
 
   .experience-section > article,
   #about-me,
   #contact-me {
     padding: 1rem;
+    height: auto;
   }
 
   .main-section {
@@ -757,34 +739,6 @@ Mobile CSS
     margin-right: 1rem;
   }
 
-  .experience-section > article,
-  #about-me,
-  #contact-me {
-    height: auto;
-  }
-
-  .top-nav {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    z-index: 10;
-  }
-
-  .mobile-nav-link {
-    line-height: 22px;
-    text-decoration: none;
-    height: 22px;
-    width: 50%;
-    text-align: center;
-    color: white;
-    background-color: gray;
-  }
-
-  .mobile-nav-link.active {
-    background-color: #4285f4;
-  }
-
   .arrow-svg {
     display: none;
   }
@@ -792,7 +746,6 @@ Mobile CSS
   .company-logo-links {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 380px) {
@@ -800,3 +753,152 @@ Mobile CSS
     display: none;
   }
 }
+
+/* 
+####################
+Navigation Styles
+####################
+*/
+
+/* Header and nav links */
+header a,
+.contact-info a {
+  text-decoration: none;
+  color: var(--nav-text);
+}
+
+header a:hover,
+li > a.active,
+li > a.active:hover,
+.nav-link.active {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.4em;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 2.3em;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+#name-highlight {
+  color: var(--accent-blue);
+}
+
+/* Navigation layout */
+#navigation {
+  margin: 20px;
+  text-align: left;
+}
+
+#navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#navigation li {
+  padding-left: 1em;
+  white-space: nowrap;
+}
+
+/* Contact info */
+.contact-info {
+  font-size: 1em;
+}
+
+.contact-info div {
+  margin: 10px;
+}
+
+.contact-info a:nth-child(even) {
+  margin-left: 50px;
+}
+
+.contact-info i {
+  font-size: 0.85em;
+}
+
+/* 
+####################
+Project Styles
+####################
+*/
+
+/* Project text styles */
+.project-blurb,
+.project-description,
+.project-title,
+.project-title a,
+.project-summary {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.project-blurb {
+  font-size: 35px;
+}
+
+.project-summary {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.project-title,
+.project-title a {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.project-description,
+#about-me p {
+  overflow-wrap: break-word;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Project links */
+.project-links a {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  margin: 0.5rem 0.5rem 0 0;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  background-color: var(--accent-blue);
+  font-size: 20px;
+  color: var(--white);
+}
+
+/* Image container */
+.imgs-container {
+  margin: 3em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.imgs-container > img {
+  max-height: 361px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* Company colors */
+.ooma-red { background-color: #cf3339; }
+.cr-gray { background-color: #4198b5; }
+.eci-green { background-color: #0e8144; }
+.charles-yellow { background-color: #FFF171; }
+.eci-color { color: #0e8144; }
+.cr-color { color: #09a3d6; }
