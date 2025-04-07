@@ -854,6 +854,10 @@ Project Styles
   font-weight: 700;
 }
 
+.project-title {
+  line-height: 1.15px;
+}
+
 .project-description,
 #about-me p {
   overflow-wrap: break-word;
