@@ -189,6 +189,10 @@ footer {
   justify-content: center;
 }
 
+footer>p {
+  color: var(--nav-text)
+}
+
 /* 
 ####################
 SVG Divders
