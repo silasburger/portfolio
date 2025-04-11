@@ -106,27 +106,46 @@
               <div class="text-col">
                 <div class="about-wrapper">
                   <div class="about-img-col">
-                    <img src="assets/silas-burger.jpg" alt="Silas Burger" />
-                    <div class="project-links">
-                      <a href="assets/Resume-Silas-Burger.pdf" target="_blank"
-                        ><i class="far fa-file-pdf"></i
-                      ></a>
-                      <a href="https://github.com/silasburger/" target="_blank"
-                        ><i class="fab fa-github"></i
-                      ></a>
+                    <img src="assets/silas-boat.webp" alt="Silas Burger" />
+                    <div class="about-me-links">
+                      <a
+                        href="assets/Resume-Silas-Burger.pdf"
+                        target="_blank"
+                        title="Resume"
+                      >
+                        <i class="far fa-file-pdf"></i> Resume
+                      </a>
+                      <a
+                        href="https://github.com/silasburger/"
+                        target="_blank"
+                        title="GitHub"
+                      >
+                        <i class="fab fa-github"></i> GitHub
+                      </a>
                       <a
                         href="https://linkedin.com/in/silasburger/"
                         target="_blank"
-                        ><i class="fab fa-linkedin-in"></i
-                      ></a>
-                      <a href="mailto:silas.a.burger@gmail.com" target="_blank"
-                        ><i class="far fa-envelope"></i
-                      ></a>
+                        title="LinkedIn"
+                      >
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                      </a>
+                      <a
+                        href="mailto:silas.a.burger@gmail.com"
+                        target="_blank"
+                        title="Email"
+                      >
+                        <i class="far fa-envelope"></i> Email
+                      </a>
                       <a
                         href="https://signal.me/#eu/rWR-9hpeKWOoFMkoZSYRV0QNZbOADefkIfcsw2HvSmKldChXQiBNLIR3sIgV1bOA"
                         target="_blank"
-                        ><i class="fa-brands fa-signal-messenger"></i
-                      ></a>
+                        title="Signal"
+                      >
+                        <i class="fa-brands fa-signal-messenger"></i> Signal
+                      </a>
+                      <a href="#contact-me" title="Contact">
+                        <i class="fas fa-envelope-open-text"></i> Contact
+                      </a>
                     </div>
                   </div>
                   <div class="about-text-col">
@@ -141,7 +160,7 @@
                     </p>
 
                     <div class="mobile-about-img">
-                      <img src="assets/silas-burger.jpg" alt="Silas Burger" />
+                      <img src="assets/silas-boat.webp" alt="Silas Burger" />
                       <div class="project-links">
                         <a href="assets/Resume-Silas-Burger.pdf" target="_blank"
                           ><i class="far fa-file-pdf"></i
@@ -168,22 +187,20 @@
                         ></a>
                       </div>
                     </div>
-
                     <p>
-                      I am a software engineer interested in using tech to solve
-                      real world problems. Below you can see my past work
-                      experience as well as a few personal projects.
+                      I am a software engineer with experience as a full-stack
+                      developer, primarily focusing on frontend development. I'm
+                      currently focused on expanding my skill set and exploring new
+                      ways to contribute effectively to a team.
                     </p>
                     <p>
-                      Outside of work, I enjoy attending concerts, photography,
-                      and improvisational theater. I'm fascinated by the
-                      intersection of diverse cultures, which, along with my
-                      interest in surfing and skateboarding, often inspires my
-                      travels.
+                      Outside of work, I enjoy photography, improvisational
+                      theater, and exploring diverse cultures, which inspire my
+                      travels and creative thinking.
                     </p>
                     <p>
                       I am actively looking for a job, so feel free to reach
-                      out! I am currently based in Berlin and open to
+                      out. I am currently based in Berlin and open to
                       relocation.
                     </p>
                   </div>
@@ -561,40 +578,30 @@
           <section class="main-section" id="contact-me">
             <div class="col-wrap">
               <div class="text-col">
-                <div class="contact-img-wrapper">
-                  <img src="assets/silas-boat.webp" alt="Silas Burger" />
-                </div>
-                <p>
-                  I'm currently seeking new opportunities. The best way to get
-                  in touch is to send me an email -
-                </p>
-                <blockquote>
-                  <a href="mailto:silas.a.burger@gmail.com" target="_blank"
-                    >silas.a.burger@gmail.com</a
-                  >
-                </blockquote>
-                <p>Or send me a message on Signal -</p>
-                <blockquote>
-                  <a
-                    href="https://signal.me/#eu/rWR-9hpeKWOoFMkoZSYRV0QNZbOADefkIfcsw2HvSmKldChXQiBNLIR3sIgV1bOA"
-                    target="_blank"
-                    >silas.50</a
-                  >
-                </blockquote>
-                <p>
-                  Feel free to checkout my
-                  <a href="assets/Resume-Silas-Burger.pdf" target="_blank"
-                    >Resume</a
-                  >,
-                  <a href="https://github.com/silasburger" target="_blank"
-                    >Github</a
-                  >, or
-                  <a
-                    href="https://www.linkedin.com/in/silasburger/"
-                    target="_blank"
-                    >Linkedin</a
-                  >
-                </p>
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  class="contact-form"
+                >
+                  <h2>Contact Me</h2>
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+                  </div>
+
+                  <button type="submit">Send</button>
+                </form>
               </div>
             </div>
           </section>
@@ -647,7 +654,6 @@
         </footer>
       </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
