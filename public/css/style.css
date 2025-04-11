@@ -533,7 +533,7 @@ About Me
   justify-content: flex-start;
 }
 
-#about-me .about-wrapper img {
+#about-me .about-wrapper>.about-img-col>img {
   border-radius: 50%;
   width: 100%;
   height: 280px;
